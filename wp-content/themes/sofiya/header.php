@@ -77,29 +77,3 @@ Version: 1.0
         </div>
     </header>
     
-    <?php if( have_rows('slider_header_main_page')){ ?>
-    <div class="slider__main">
-        <div class="owl-carousel">
-            <?php while ( have_rows('slider_header_main_page') ) { the_row(); ?>
-            <div class="item" style="background-image: url('<?php echo get_sub_field('image_subblock_header_main_page'); ?>')">
-                <div class="carousel__inner">
-                    <div class="carousel__title"><?php echo get_sub_field('text_subblock_header_main_page'); ?></div>
-                    <a href="<?php echo get_sub_field('link_subblock_header_main_page'); ?>" class="btn btn__link">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <?php } ?>
-        </div>
-    </div>
-    <?php }else{ ?>
-    <div class="slider__main">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/image/slide-01.jpg')">
-                <div class="carousel__inner">
-                    <div class="carousel__title">Изысканный отель с европейским качеством в двух минутах от моря</div>
-                    <a href="#" class="btn btn__link">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php } ?>
-    
