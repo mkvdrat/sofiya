@@ -31,7 +31,7 @@ $(document).ready(function () {
         margin: 16,
         dots: false,
         nav: true,
-        navText: ["<img src='image/prev.svg'/>", "<img src='image/next.svg'/>"],
+        navText: ["<img src='/wp-content/themes/sofiya/image/prev.svg'/>", "<img src='/wp-content/themes/sofiya/image/next.svg'/>"],
         responsiveClass: true,
         responsive: {
             0: {

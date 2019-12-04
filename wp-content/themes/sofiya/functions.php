@@ -239,6 +239,22 @@ class header_menu extends Walker_Nav_Menu {
 
 /**********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************
+*********************************************************************РАБОТА С METAПОЛЯМИ*******************************************************************
+***********************************************************************************************************************************************************
+***********************************************************************************************************************************************************/
+//Вывод изображения для плагина nextgen-gallery
+function getNextGallery($post_id, $meta_key){
+	global $wpdb;
+	
+	$value = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->postmeta AS pm JOIN $wpdb->posts AS p ON (pm.post_id = p.ID) AND (pm.post_id = %s) AND meta_key = %s ORDER BY pm.post_id DESC LIMIT 1", $post_id, $meta_key) );
+	
+	$unserialize_value = unserialize($value);
+	
+	return $unserialize_value;	
+}
+
+/**********************************************************************************************************************************************************
+***********************************************************************************************************************************************************
 **********************************************************************"РАЗДЕЛ НОМЕРА"**********************************************************************
 ***********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************/
@@ -320,9 +336,74 @@ add_action( 'widgets_init', 'register_instagram_widgets' );
 
 /**********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************
-*****************************************************************REMOVE CATEGORY_TYPE SLUG*********************************************************************
+*****************************************************************REMOVE CATEGORY_TYPE SLUG*****************************************************************
 ***********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************/
+//Удаление category из url таксономии
+function true_remove_slug_from_articles( $url, $term, $taxonomy ){
+
+	$taxonomia_name = 'category';
+	$taxonomia_slug = 'category';
+
+	if ( strpos($url, $taxonomia_slug) === FALSE || $taxonomy != $taxonomia_name ) return $url;
+
+	$url = str_replace('/' . $taxonomia_slug, '', $url);
+
+	return $url;
+}
+add_filter( 'term_link', 'true_remove_slug_from_articles', 10, 3 );
+
+//Перенаправление articles-list в случае удаления category
+function parse_request_url_articles( $query ){
+
+	$taxonomia_name = 'category';
+
+	if( $query['attachment'] ) :
+		$condition = true;
+		$main_url = $query['attachment'];
+	else:
+		$condition = false;
+		$main_url = $query['name'];
+	endif;
+
+	$termin = get_term_by('slug', $main_url, $taxonomia_name);
+
+	if ( isset( $main_url ) && $termin && !is_wp_error( $termin )):
+
+		if( $condition ) {
+			unset( $query['attachment'] );
+			$parent = $termin->parent;
+			while( $parent ) {
+				$parent_term = get_term( $parent, $taxonomia_name);
+				$main_url = $parent_term->slug . '/' . $main_url;
+				$parent = $parent_term->parent;
+			}
+		} else {
+			unset($query['name']);
+		}
+
+		switch( $taxonomia_name ):
+			case 'category':{
+				$query['category_name'] = $main_url;
+				break;
+			}
+			case 'post_tag':{
+				$query['tag'] = $main_url;
+				break;
+			}
+			default:{
+				$query[$taxonomia_name] = $main_url;
+				break;
+			}
+		endswitch;
+
+	endif;
+
+	return $query;
+
+}
+add_filter('request', 'parse_request_url_articles', 1, 1 );
+
 //Удаление  из url таксономии
 function true_remove_slug_from_category_rooms( $url, $term, $taxonomy ){
 
@@ -416,3 +497,50 @@ function parse_request_url_post( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'parse_request_url_post' );
+
+/**********************************************************************************************************************************************************
+***********************************************************************************************************************************************************
+*****************************************************************NEXT_PREV CUSTOM POST*********************************************************************
+***********************************************************************************************************************************************************
+***********************************************************************************************************************************************************/
+function mod_get_adjacent_post($direction = 'prev', $post_types = 'post') {
+    global $post, $wpdb;
+
+    if(empty($post)) return NULL;
+    if(!$post_types) return NULL;
+
+    if(is_array($post_types)){
+        $txt = '';
+        for($i = 0; $i <= count($post_types) - 1; $i++){
+            $txt .= "'".$post_types[$i]."'";
+            if($i != count($post_types) - 1) $txt .= ', ';
+        }
+        $post_types = $txt;
+    }
+
+    $current_post_date = $post->post_date;
+
+    $join = '';
+    $in_same_cat = FALSE;
+    $excluded_categories = '';
+    $adjacent = $direction == 'prev' ? 'previous' : 'next';
+    $op = $direction == 'prev' ? '<' : '>';
+    $order = $direction == 'prev' ? 'DESC' : 'ASC';
+
+    $join  = apply_filters( "get_{$adjacent}_post_join", $join, $in_same_cat, $excluded_categories );
+    $where = apply_filters( "get_{$adjacent}_post_where", $wpdb->prepare("WHERE p.post_date $op %s AND p.post_type IN({$post_types}) AND p.post_status = 'publish'", $current_post_date), $in_same_cat, $excluded_categories );
+    $sort  = apply_filters( "get_{$adjacent}_post_sort", "ORDER BY p.post_date $order LIMIT 1" );
+
+    $query = "SELECT p.* FROM $wpdb->posts AS p $join $where $sort";
+    $query_key = 'adjacent_post_' . md5($query);
+    $result = wp_cache_get($query_key, 'counts');
+    if ( false !== $result )
+        return $result;
+
+    $result = $wpdb->get_row("SELECT p.* FROM $wpdb->posts AS p $join $where $sort");
+    if ( null === $result )
+        $result = '';
+
+    wp_cache_set($query_key, $result, 'counts');
+    return $result;
+}
