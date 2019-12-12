@@ -26,10 +26,15 @@ Version: 1.0
         <div class="header__middle">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-lg-5">
+                    <div class="col-xs-12 col-sm-4 col-lg-5 col-flex">
+						<a href="#menu" class="mburger mburger--tornado">
+							<b></b>
+							<b></b>
+							<b></b>
+						</a>
                         <p><?php echo get_field('title_header_main_page', '15'); ?></p>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-lg-3">
+                    <div class="col-xs-12 col-sm-4 col-lg-3 text-center">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
                             <img
                               src="<?php header_image(); ?>"
@@ -43,7 +48,7 @@ Version: 1.0
                 </div>
             </div>
         </div>
-        <div class="header__bottom hidden-xs hidden-sm">
+        <div class="header__bottom hidden-xs visible-lg">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">

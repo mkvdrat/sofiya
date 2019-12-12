@@ -176,6 +176,7 @@ header p {
     background: transparent;
     font-weight: 600;
     font-size: 18px;
+    text-align: left;
     color: #fff;
     line-height: 24px;
     text-decoration: none;
@@ -725,6 +726,7 @@ textarea {
     width: 100%;
     padding: 5px 18px;
     font-family: "Open Sans", sans-serif;
+    font-weight: normal;
 }
 
 textarea {
@@ -964,8 +966,9 @@ h2 {
 }
 
 .block__content ul {
+    list-style: disc;
     padding: 0 0 1px 18px;
-    list-style: disc outside;
+    list-style-position: outside;
 }
 
 .block__content li {
@@ -1035,36 +1038,24 @@ h2 {
 }
 
 .pagination > li > a, .pagination > li > span {
-    font-family: "Open Sans", sans-serif;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
-    color: #1F1F1F;
+    color: #2a2b24;
     border: none;
     background: transparent;
 }
 
-.page-item.active {
+.page-item > .current {
     z-index: 3;
+    color: #FFC557;
     cursor: default;
-    font-weight: bold;
-    color: #1F1F1F;
-}
-
-.page-item.active span {
-    background: transparent;
-    color: #1F1F1F;
-}
-
-.pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover {
-    color: #1F1F1F;
     background-color: transparent;
-    border-color: transparent;
     font-weight: bold;
 }
 
-.page-item.active:hover {
+.page-item > .current:hover {
     z-index: 3;
     color: #FFC557;
     cursor: default;
@@ -1105,13 +1096,13 @@ h2 {
 }
 
 .gallery__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
     text-align: left;
-    color: #1F1F1F;
-    padding: 11px 0 5px;
-    text-transform: uppercase;
+    color: #2a2b24;
+    height: 63px;
+    padding: 11px 22px 5px;
 }
 
 .gallery__inner {
@@ -2066,22 +2057,14 @@ blockquote {
 
 .testim__name {
     font-weight: bold;
-    font-size: 21px;
-    line-height: 30px;
-    color: #3C3C3C;
 }
 
 .testim__date {
     margin-bottom: 18px;
-    font-size: 21px;
-    line-height: 30px;
-    color: #3C3C3C;
 }
 
 .testim__text {
-    font-size: 16px;
-    line-height: 24px;
-    color: #3C3C3C;
+    font-size: 18px;
 }
 
 .testimonials {
@@ -2627,66 +2610,9 @@ p {
     margin-bottom: 20px;
 }
 
-.news__date {
-    font-size: 14px;
-    line-height: normal;
-    color: #3C3C3C;
-    font-weight: normal;
-    font-style: italic;
-    margin-bottom: 3px;
-}
 
-.news__title {
-    font-size: 24px;
-    line-height: 32px;
-    color: #1F1F1F;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
 
-.news__text {
-    font-size: 16px;
-    line-height: normal;
-    color: #3C3C3C;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
 
-.standart__page .content .pagination {
-    padding: 0;
-    justify-content: flex-start;
-}
 
-.paginations {
-    padding-top: 60px;
-}
 
-.news__page .content .parts__block {
-    padding-bottom: 0;
-}
 
-.gallery__item {
-    display: block;
-    margin-bottom: 30px;
-}
-
-.gallery__item .background__image {
-    height: 317px;
-}
-
-.grid__gallery .row__8 [class*="col-"] {
-    height: auto;
-}
-
-.grid__gallery {
-    padding-top: 45px;
-}
-
-.testim__admin {
-    padding-left: 125px;
-}
-
-.testim__admin .testim__name {
-    margin-bottom: 20px;
-}

@@ -13,7 +13,7 @@ Version: 1.0
         <div class="container">
             <div class="footer__top">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-xs-12 col-md-5">
                         <?php if( have_rows('contact_footer_main_page')){ ?>
                         <ul class="footer__address">
                             <?php while ( have_rows('contact_footer_main_page') ) { the_row(); ?>
@@ -29,9 +29,9 @@ Version: 1.0
                         </ul>
                         <?php } ?>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-xs-12 col-md-7">
                         <div class="row footer__menu">
-                            <div class="col-lg-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <?php
                                     if (has_nav_menu('footer_a_menu')){
                                         wp_nav_menu( array(
@@ -54,7 +54,7 @@ Version: 1.0
                                     }
                                 ?>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <?php
                                     if (has_nav_menu('footer_b_menu')){
                                         wp_nav_menu( array(
@@ -77,7 +77,7 @@ Version: 1.0
                                     }
                                 ?>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-xs-12 col-sm-4">
                                 <?php
                                     if (has_nav_menu('footer_c_menu')){
                                         wp_nav_menu( array(
@@ -106,14 +106,37 @@ Version: 1.0
             </div>
             <div class="footer__bottom">
                 <div class="row row-flex">
-                    <div class="col-lg-8"><?php echo get_field('copyright_a_block_footer_main_page', '15'); ?></div>
-                    <div class="col-lg-4"><?php echo get_field('copyright_b_block_footer_main_page', '15'); ?></div>
+                    <div class="col-xs-12 col-sm-8"><?php echo get_field('copyright_a_block_footer_main_page', '15'); ?></div>
+                    <div class="col-xs-12 col-sm-4"><?php echo get_field('copyright_b_block_footer_main_page', '15'); ?></div>
                 </div>
             </div>
         </div>
     </footer>
 </div>
-
+<nav id="menu">
+    <?php
+                                if (has_nav_menu('header_a_menu')){
+                                    wp_nav_menu( array(
+                                        'theme_location'  => 'header_a_menu',
+                                        'menu'            => '',
+                                        'container'       => false,
+                                        'container_class' => '',
+                                        'container_id'    => '',
+                                        'menu_class'      => '',
+                                        'menu_id'         => '',
+                                        'echo'            => true,
+                                        'fallback_cb'     => 'wp_page_menu',
+                                        'before'          => '',
+                                        'after'           => '',
+                                        'link_before'     => '',
+                                        'link_after'      => '',
+                                        'items_wrap'      => '<ul class="nav">%3$s</ul>',
+                                        'depth'           => 2,
+                                        'walker'          => new header_menu(),
+                                    ) );
+                                }
+                            ?>
+</nav>
 <?php wp_footer(); ?>
 
 </body>

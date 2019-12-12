@@ -41,11 +41,11 @@ get_header();
                 <div class="row-no-gutters">
                     <?php if(!empty($sectionsCols[0])){ ?>
                     <?php foreach($sectionsCols[0] as $room){ ?>
-                    <div class="grid-item col-sm-12 col-lg-5">
+                    <div class="grid-item col-xs-12 col-sm-5">
                         <div class="item_room item__room-1">
                             <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($room->ID), 'full'); ?>
-                            <div class="background__image" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
-                                <div class="item__room_content">
+                            <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
+                                <div class="item__room_content content__shadow">
                                     <div class="item__room_title"><?php echo $room->post_title; ?></div>
                                     
                                     <?php $price = get_post_meta( $room->ID, 'price_rooms_page', $single = true ); ?>
@@ -59,15 +59,15 @@ get_header();
                     <?php } ?>
                     <?php } ?>
                     
-                    <div class="grid-item col-sm-12 col-lg-7">
+                    <div class="grid-item col-xs-12 col-sm-7">
                         <div class="row-no-gutters">
                             <?php if(!empty($sectionsCols[1])){ ?>
                             <?php foreach($sectionsCols[1] as $room){ ?>
                             <div class="grid-item col-sm-12">
                                 <div class="item_room item__room-2">
                                     <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($room->ID), 'full'); ?>
-                                    <div class="background__image" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
-                                        <div class="item__room_content">
+                                    <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
+                                        <div class="item__room_content content__shadow">
                                             <div class="item__room_title"><?php echo $room->post_title; ?></div>
                                             
                                             <?php $price = get_post_meta( $room->ID, 'price_rooms_page', $single = true ); ?>
@@ -83,11 +83,11 @@ get_header();
                             
                             <?php if(!empty($sectionsCols[2])){ ?>
                             <?php foreach($sectionsCols[2] as $room){ ?>
-                            <div class="grid-item col-sm-12 col-lg-6">
+                            <div class="grid-item col-xs-12 col-sm-6">
                                 <div class="item_room item__room-3">
                                     <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($room->ID), 'full'); ?>
-                                    <div class="background__image" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
-                                        <div class="item__room_content">
+                                    <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
+                                        <div class="item__room_content content__shadow">
                                             <div class="item__room_title"><?php echo $room->post_title; ?></div>
                                             
                                             <?php $price = get_post_meta( $room->ID, 'price_rooms_page', $single = true ); ?>
@@ -103,11 +103,11 @@ get_header();
                             
                             <?php if(!empty($sectionsCols[3])){ ?>
                             <?php foreach($sectionsCols[3] as $room){ ?>
-                            <div class="grid-item col-sm-12 col-lg-6">
+                            <div class="grid-item col-sm-12 col-sm-6">
                                 <div class="item_room item__room-4">
                                     <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($room->ID), 'full'); ?>
-                                    <div class="background__image" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
-                                        <div class="item__room_content">
+                                    <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
+                                        <div class="item__room_content content__shadow">
                                             <div class="item__room_title"><?php echo $room->post_title; ?></div>
                                             
                                             <?php $price = get_post_meta( $room->ID, 'price_rooms_page', $single = true ); ?>
@@ -329,7 +329,7 @@ get_header();
                             <?php
                                 while ( have_rows('rest_block_main_page') ) { the_row();
                             ?> 
-                            <div class="col-lg-3">
+                            <div class="col-xs-4 col-sm-3">
                                 <div class="fetures__item">
                                     <div class="image">
                                         <?php $image_url = get_sub_field('image_subblock_main_page'); ?>
@@ -363,11 +363,11 @@ get_header();
         <div class="info__block">
             <div class="container-fluid">
                 <div class="row row-flex">
-                    <div class="col-lg-4">
+                    <div class="col-xs-12 col-sm-4">
                         <?php $image_url = get_field('image_attractions_block_main_page'); ?>
                         <div class="inline__image"><img src="<?php echo $image_url ? $image_url : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>"/></div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-xs-12 col-sm-8">
                         <div class="text__container">
                             <div class="title__block"><?php echo get_field('title_attractions_block_main_page'); ?></div>
                             <div class="text__block">
@@ -387,7 +387,7 @@ get_header();
                 'category'    => '11,14',
                 'post_type'   => 'post',
                 'orderby'     => 'date',
-                'order'       => 'ASC',
+                'order'       => 'DESC',
             );
 
             $lists = get_posts( $args );
@@ -406,7 +406,7 @@ get_header();
                         foreach($lists as $list){
                         $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($list->ID), 'full');
                     ?>
-                    <div class="col-lg-4">
+                    <div class="col-xs-12 col-sm-4">
                         <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
                             <div class="an__content content__shadow">
                                 <?php $cat = get_the_category( $list->ID ); ?>

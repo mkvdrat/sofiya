@@ -3,7 +3,7 @@ document.addEventListener(
         new Mmenu("#menu", {
             "extensions": [
                 "pagedim-black",
-                "position-right"
+                "position-left"
             ]
         });
     }
