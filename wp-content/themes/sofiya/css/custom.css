@@ -753,29 +753,37 @@ label {
     margin: 0;
 }
 
+.modal input::-webkit-input-placeholder,
 .info__part input::-webkit-input-placeholder,
-.info__part textarea::-webkit-input-placeholder {
+.info__part textarea::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder {
     font-size: 14px;
     color: #1F1F1F;
     font-weight: normal;
 }
 
+.modal input::-moz-placeholder,
 .info__part input::-moz-placeholder,
-.info__part textarea::-moz-placeholder {
+.info__part textarea::-moz-placeholder,
+.modal textarea::-moz-placeholder {
     font-size: 14px;
     color: #1F1F1F;
     font-weight: normal;
 }
 
+.modal input:-ms-input-placeholder,
 .info__part input:-ms-input-placeholder,
-.info__part textarea:-ms-input-placeholder {
+.info__part textarea:-ms-input-placeholder,
+.modal textarea:-ms-input-placeholder {
     font-size: 14px;
     color: #1F1F1F;
     font-weight: normal;
 }
 
+.modal input:-moz-placeholder,
 .info__part input:-moz-placeholder,
-.info__part textarea:-moz-placeholder {
+.info__part textarea:-moz-placeholder,
+.modal textarea:-moz-placeholder {
     font-size: 14px;
     color: #1F1F1F;
     font-weight: normal;
@@ -2378,7 +2386,8 @@ blockquote {
     margin-bottom: 27px;
 }
 
-.parts__block .btn {
+.parts__block .btn,
+.modal .btn {
     border-color: #000;
     color: #000;
 }
@@ -2497,7 +2506,8 @@ blockquote {
     margin-bottom: 30px;
 }
 
-.info__part .form__title {
+.info__part .form__title,
+.modal .form__title {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -2507,6 +2517,7 @@ blockquote {
 }
 
 
+.modal  .info__part,
 .contacts__page .info__part {
     background-color: #F7F7F7;
     padding: 25px 30px;
@@ -2689,4 +2700,22 @@ p {
 
 .testim__admin .testim__name {
     margin-bottom: 20px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    background: #F7F7F7;
+}
+
+.modal-header {
+    padding: 0;
+    border-bottom: none;
+    background: #F7F7F7;
+}
+
+.modal-header .close {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
 }
