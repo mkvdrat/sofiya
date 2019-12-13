@@ -28,9 +28,7 @@ get_header();
                         <h1><?php echo get_field('title_reviews_page'); ?></h1>
                         <div class="sub__title"><?php echo get_field('text_reviews_page'); ?></div>
                         
-                        <?php if (have_posts()): while (have_posts()): the_post(); ?>
-                            <?php the_content(); ?>
-                        <?php endwhile; endif; ?>
+                        <?php echo show_gwolle_gb($args = false); ?>
                     </div>
                 </div>
             </div>
