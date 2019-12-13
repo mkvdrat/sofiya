@@ -46,15 +46,5 @@ $(document).ready(function () {
         }
     });
     
-    $('.check__block *[name="confirm"]').on('change', function () {
-        if ($(this).is(':checked')) {
-            $('.button__group *[type="submit"]').removeAttr('disabled');
-        } else {
-            $('.button__group *[type="submit"]').attr('disabled', 'disabled');
-        }
-    });
-    
-    $('.check__block *[name="confirm"]').prop( "checked", false );
-    
     $('.button__group *[type="submit"]').attr('disabled', 'disabled');
 });

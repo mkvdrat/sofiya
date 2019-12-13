@@ -66,7 +66,7 @@ get_header();
         </div>
         <?php } ?>
 
-         <div class="insta__block">
+        <div class="insta__block">
             <div class="inst__box">
                 <?php
                     if ( function_exists('dynamic_sidebar') )

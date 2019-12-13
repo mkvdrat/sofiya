@@ -1,0 +1,3207 @@
+# Translation of Plugins - Gwolle Guestbook - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Gwolle Guestbook - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-10-25 15:40:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Gwolle Guestbook - Stable (latest release)\n"
+
+#. translators: Commercial Add-On metabox line for edit inline
+#: add-on/gb-add-on.php:101
+msgid "Edit entry:"
+msgstr "Редактировать запись:"
+
+#: admin/gb-page-add-on.php:87
+msgid "Edit content of entry on the frontend with AJAX."
+msgstr "Редактировать содержимое записи во фронтенде посредством AJAX."
+
+#: admin/tabs/gb-emailtab.php:47
+msgid "You are not subscribed to email notifications."
+msgstr "Вы не подписаны на уведомления по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:45
+msgid "You are subscribed to email notifications."
+msgstr "Вы подписаны на уведомления по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:40
+msgid "Subscription status"
+msgstr "Подписанность"
+
+#: functions/gb-metabox.php:23
+msgid "Edit in Editor"
+msgstr "Редактировать в редакторе"
+
+#. translators: Log message
+#: functions/gb-log.php:130
+msgid "Privacy Policy was accepted."
+msgstr "Политика приватности принята."
+
+#: admin/gb-page-add-on.php:89
+msgid "Blacklist for words and IP address."
+msgstr "Чёрный список для слов и IP-адресов."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:261
+msgid "When an entry contains any of these words in its content, name, URL, email, or IP address, it will be held in the moderation queue. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
+msgstr "Когда в тексте записи, в имени, URL, e-mail или IP-адресе содержится любое из данных слов, такая запись помещается в очередь на модерирование. По одному слову или IP-адресу в строке. Совпадения регистрируются в том числе по части слова, так что слово &#8220;press&#8221; будет обнаружено в слове &#8220;WordPress&#8221;."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:259
+msgid "Enter words for the blacklist."
+msgstr "Введите слова чёрного списка."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:257
+msgid "Blacklist Moderation"
+msgstr "Модерирование чёрного списка"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:39
+msgid "Abuse"
+msgstr "Нарушения"
+
+#: admin/gb-page-import.php:293
+msgid "If you want to manually prepare a CSV file, please use decent software like LibreOffice Calc. Microsoft Excel will not be able to prepare a valid CSV file."
+msgstr "Если Вы желаете подготовить CSV-файл вручную, используйте подходящую для этого программу, например, LibreOffice Calc. Microsoft Excel работающий файл CSV Вам не сделает."
+
+#: frontend/gb-pagination.php:31 admin/gb-pagination.php:42
+msgid "Guestbook list navigation"
+msgstr "Навигация по списку гостевой книги"
+
+#. translators: Settings page, option for preview
+#: add-on/gb-add-on.php:142
+msgid "Adds a button to the form where visitors can preview their entry before posting."
+msgstr "Добавляет в форму кнопку, с помощью которой посетители смогут посмотреть на свою запись перед её отправкой."
+
+#. translators: Settings page, option for preview
+#: add-on/gb-add-on.php:140
+msgid "Show Preview button in Form."
+msgstr "Показывать в форме кнопку предварительного просмотра."
+
+#: admin/gb-page-entries.php:597
+msgid "Something went wrong. Please try again."
+msgstr "Не получилось. Попробуйте ещё раз."
+
+#: admin/gb-page-editor.php:205
+msgid "Admin Reply by: %s"
+msgstr "Ответ администратора: %s"
+
+#: frontend/gb-form.php:423
+msgid "Warning: This form can only be used if JavaScript is enabled in your browser."
+msgstr "Внимание: Эта форма будет работать, только если в Вашем браузере разрешён JavaScript."
+
+#: frontend/gb-widget-search.php:62
+msgid "Search"
+msgstr "Искать"
+
+#: frontend/gb-widget-search.php:58
+msgid "Search..."
+msgstr "Производится поиск..."
+
+#: frontend/gb-widget-search.php:55
+msgid "Search:"
+msgstr "Что искать:"
+
+#: frontend/gb-widget-search.php:21 frontend/gb-widget-search.php:30
+#: frontend/gb-widget-search.php:92
+msgid "Guestbook Search"
+msgstr "Поиск в гостевой книге"
+
+#: frontend/gb-widget-search.php:20
+msgid "Search for guestbook entries."
+msgstr "Поиск записей в гостевой книге."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:255
+msgid "Visitors can report abusive entries through a link in the metabox."
+msgstr "Посетители могут жаловаться на нарушения, нажимая ссылку в метабоксе."
+
+#. translators: Commercial Add-On. Text for privacy policy.
+#: add-on/gb-add-on.php:279
+msgid "When visitors report an entry as abusive, the entry ID will be stored in a cookie in the browser. Also, the IP address will be saved temporarily in the database together with the number of reports."
+msgstr "Когда пользователи жалуются на запись как нарушающую правила, в браузере в файлах кукиз будет сохранён идентификатор записи. Помимо этого, в базе данных временно будет сохранён IP-адрес, а также количество жалоб."
+
+#. translators: Commercial Add-On, option for auto anonymize
+#: add-on/gb-add-on.php:175
+msgid "Auto Anonymize entries older than:"
+msgstr "Автоматически делать анонимными записи, старее чем:"
+
+#. translators: Commercial Add-On, obsoleted because of typo
+#: add-on/gb-add-on.php:253
+msgid "Vistors can report abusive entries through a link in the metabox."
+msgstr "Посетители могут жаловаться на нарушения в сообщениях по ссылке в метабоксе."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:251
+msgid "Enable report abuse link in Metabox."
+msgstr "Включить в метабоксе ссылку, чтобы жаловаться на нарушение."
+
+#: frontend/gwolle_gb-entry.php:229
+msgid "Toggle this metabox."
+msgstr "Переключить этот метабокс в другое состояние."
+
+#: admin/gb-page-add-on.php:95
+msgid "Auto Anonymize timer (optional)."
+msgstr "Таймер автоматической анонимизации (не обязателен)."
+
+#. translators: Commercial Add-On. Text for privacy policy.
+#: add-on/gb-add-on.php:277
+msgid "When visitors report an entry as abusive, the entry ID will be stored in a cookie in the browser. For fallback, the IP address will be saved temporarily as a transient in the database together with the number of reports."
+msgstr "Когда посетители пожалуются, что какая-то запись нарушает правила, идентификатор этой записи будет сохранён браузером в файлах cookies. В качестве опредохранительной меры в кэше базы данных временно будет сохранён IP-адрес, а также количество жалоб."
+
+#. translators: Commercial Add-On, option for auto anonymize
+#: add-on/gb-add-on.php:171
+msgid "This setting will enable automatic anonymization of entries older than a certain date."
+msgstr "Данная настройка включит автоматическую анонимизацию записей, старше определённой даты."
+
+#. translators: Commercial Add-On, option for auto anonymize
+#: add-on/gb-add-on.php:169
+msgid "Auto Anonymize entries after a certain time."
+msgstr "Автоматически делать записи анонимными по истечении определённого периода времени."
+
+#. translators: Commercial Add-On, option for auto anonymize
+#: add-on/gb-add-on.php:167
+msgid "Auto Anonymize"
+msgstr "Автоматическая анонимизация"
+
+#. translators: Username
+#: functions/gb-privacy.php:306
+msgid "Anonymous"
+msgstr "Анонимные"
+
+#. translators: %d: Entry ID
+#: functions/gb-privacy.php:282
+msgid "Guestbook entry %d contains personal data but could not be anonymized."
+msgstr "В записи № %d содержатся персональные данные, но её не получилось анонимизировать."
+
+#: functions/gb-privacy.php:263
+msgid "No guestbook entries have been found for this email address."
+msgstr "В гостевых книгах не было найдено ни одной записи с указанным адресом электронной почты."
+
+#: functions/gb-privacy.php:95
+msgid "URL of entry"
+msgstr "URL-адрес записи"
+
+#: functions/gb-privacy.php:41
+msgid "The entered entry and its metadata may be sent to third parties like Akismet and Stop Forum Spam to help spam detection. Their respective privacy policies are at https://automattic.com/privacy/ and https://www.stopforumspam.com/privacy."
+msgstr "Введённая запись и связанные с ней данные могут отправляться сторонним сервисам, таким как «Akismet» и «Stop Forum Spam», в целях проверки на спам. С политикой обработки персональных данных этими сервисами можно ознакомиться по ссылкам https://automattic.com/privacy/ и https://www.stopforumspam.com/privacy соответственно."
+
+#: functions/gb-privacy.php:40
+msgid "An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your entry, your profile picture is visible to the public in the context of your guestbook entry."
+msgstr "Обезличенная строка, сгенерированная из адреса Вашей электронной почты (по-другому хэш) может передаваться сервису «Gravatar», чтобы узнать, пользуетесь ли Вы им. С политикой обработки персональных данных данным сервисом можно ознакомиться здесь: https://automattic.com/privacy/. После того как Ваша запись будет пропущена к публикации, картинка Вашего профиля будет видна посетителям сайта как относящаяся к Вашей записи."
+
+#: functions/gb-privacy.php:39
+msgid "When visitors leave entries on the site we collect the data entered in the guestbook form and possibly the IP address and hostname of the visitor to help spam detection."
+msgstr "Когда посетители оставляют на сайте записи, мы собираем данные, введённые в форму отправки в гостевой книге. Также в целях борьбы со спамом может собираться информация об IP-адресе и доменном имени хоста посетителя."
+
+#. translators: Log message
+#: functions/gb-log.php:129
+msgid "Entry has been anonymized."
+msgstr "Запись анонимизирована."
+
+#: frontend/gb-form.php:152
+msgid "Hide this form."
+msgstr "Скрыть эту форму."
+
+#: admin/tabs/gb-formtab.php:137
+msgid "Permanently remove IP Address and hostname for all existing entries."
+msgstr "Навсегда удалить IP-адрес и доменное имя хоста для всех существующих записей."
+
+#: admin/gb-page-settings.php:172
+msgid "IP address and hostname was removed from all the entries."
+msgstr "IP-адрес и доменное имя хоста были удалены из всех записей."
+
+#: admin/gb-page-entries.php:271
+msgid "Anonymize"
+msgstr "Анонимизировать"
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:818
+msgid "%s entry anonymized."
+msgid_plural "%s entries anonymized."
+msgstr[0] "%s запись анонимизирована."
+msgstr[1] "%s записи анонимизировано."
+msgstr[2] "%s записей анонимизировано."
+
+#: admin/gb-page-editor.php:393
+msgid "No"
+msgstr "Нет"
+
+#: admin/gb-page-editor.php:391
+msgid "Yes"
+msgstr "Да"
+
+#: admin/gb-page-editor.php:389
+msgid "Logged in"
+msgstr "Был залогинен"
+
+#: admin/gb-page-add-on.php:88
+msgid "Report Abuse."
+msgstr "Пожаловаться на злоупотребление."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:269
+msgid "Already moderated"
+msgstr "Уже промодерированные"
+
+#. translators: Commercial Add-On, remove abuse reports and moderate entry
+#: add-on/gb-add-on.php:267
+msgid "Remove and moderate"
+msgstr "Удалить и промодерировать"
+
+#. translators: Commercial Add-On, metabox on editor
+#: add-on/gb-add-on.php:265
+msgid "Abuse Reports"
+msgstr "Сообщения о нарушениях"
+
+#. translators: Commercial Add-On, mail notification on abuse report
+#: add-on/gb-add-on.php:61
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"There was a report for abuse for a guestbook entry at '%blog_name%'.\n"
+"You can check it at %entry_management_url%.\n"
+"\n"
+"Have a nice day.\n"
+"Your Gwolle-GB-Mailer\n"
+"\n"
+"\n"
+"Website address: %blog_url%\n"
+"User name: %user_name%\n"
+"User email: %user_email%\n"
+"Entry status: %status%\n"
+"Reports: %reports%\n"
+"Entry content:\n"
+"%entry_content%\n"
+msgstr ""
+"\n"
+"Здравствуйте,\n"
+"\n"
+"Поступила жалоба на нарушение в записи в гостевой книге на сайте '%blog_name%'.\n"
+"Вы можете проверить её по ссылке %entry_management_url%.\n"
+"\n"
+"Хорошего дня.\n"
+"Ваш почтовый робот гостевой книги Gwolle\n"
+"\n"
+"\n"
+"Адрес сайта: %blog_url%\n"
+"Имя пользователя: %user_name%\n"
+"Почтовый адрес пользователя: %user_email%\n"
+"Статус записи: %status%\n"
+"Жалобы: %reports%\n"
+"Содержимое записи:\n"
+"%entry_content%\n"
+
+#: admin/tabs/gb-formtab.php:134
+msgid "Remove IP Address"
+msgstr "Удалить IP-адрес"
+
+#. translators: Commercial Add-On, error on abuse report
+#: add-on/gb-add-on.php:57
+msgid "Error"
+msgstr "Ошибка"
+
+#. translators: Commercial Add-On, abuse report submitted
+#: add-on/gb-add-on.php:55
+msgid "Reported"
+msgstr "Жалоба отправлена"
+
+#. translators: Commercial Add-On, frontend metabox
+#: add-on/gb-add-on.php:51
+msgid "Report Abuse"
+msgstr "Пожаловаться на злоупотребление"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:49
+msgid "Report Abuse for this entry"
+msgstr "Сообщить о злоупотреблении в данном сообщении"
+
+#: frontend/gb-form.php:396
+msgid "Read the Privacy Policy"
+msgstr "Ознакомиться с политикой обработки персональных данных"
+
+#. translators: Log message
+#: functions/gb-log.php:118
+msgid "Entry marked for being submitted too fast."
+msgstr "Запись помечена как спам, поскольку была отправлена слишком быстро."
+
+#. translators: Log message
+#: functions/gb-log.php:117
+msgid "Entry marked for too many links."
+msgstr "Запись помечена как спам из-за большого количества ссылок."
+
+#: frontend/gb-form.php:287 frontend/gb-form.php:288 frontend/gb-form.php:306
+#: frontend/gb-form.php:307
+msgid "Do not touch this"
+msgstr "Не трогайте это"
+
+#: frontend/gb-form-posthandling.php:393
+msgid "Your entry was submitted too fast, please slow down and try again."
+msgstr "Вы отправили свою запись слишком быстро. Попробуйте сделать это помедленнее."
+
+#: admin/tabs/gb-formtab.php:129
+msgid "Disabling this option will probably make the Akismet spamfilter less effective."
+msgstr "Отключение данной опции вероятно понизит эффективность антиспамового фильтра Akismet."
+
+#: admin/tabs/gb-formtab.php:128
+msgid "Disabling this option will still have the IP Address used for spamfiltering in Stop Forum Spam."
+msgstr "Даже если отключить эту опцию, антиспамовым сервисом «Stop Forum Spam» IP-адрес всё равно будет использоваться."
+
+#: admin/tabs/gb-antispamtab.php:167
+msgid "This will enable a timer function for the form. If the form is submitted faster than the timeout the entry will be marked as spam."
+msgstr "Данная опция включит в форме таймер. Если форма будет отправлена быстрее, чем за минимальное время, такая запись будут помечена как спам."
+
+#: admin/tabs/gb-antispamtab.php:163
+msgid "Set timeout for form submit."
+msgstr "Установить минимальное время заполнения и отправки формы."
+
+#: admin/tabs/gb-antispamtab.php:155
+msgid "Form Timeout"
+msgstr "Время заполнения формы"
+
+#: admin/tabs/gb-antispamtab.php:148
+msgid "This will scan entries for links, which are often part of spam. If there are 2 links found in the content, it will be automatically marked as spam."
+msgstr "Будет осуществляться проверка записей на наличие веб-ссылок. Ссылки часто присутствуют в спаме. Если в тексте записи обнаружится две ссылки, она будет автоматически помечена как спам."
+
+#: admin/tabs/gb-antispamtab.php:144
+msgid "Scan for multiple links."
+msgstr "Проверять на наличие более чем одной ссылки."
+
+#: admin/tabs/gb-antispamtab.php:136
+msgid "Link Checker"
+msgstr "Проверка на наличие ссылок"
+
+#: admin/gb-page-add-on.php:96
+msgid "Auto Delete timer (optional)."
+msgstr "Таймер автоматического удаления (не обязательно)."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:195
+msgid "1 Month"
+msgstr "1 месяц"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:193
+msgid "2 Weeks"
+msgstr "2 недели"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:191
+msgid "1 Week"
+msgstr "1 неделя"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:189
+msgid "2 Days"
+msgstr "2 дня"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:187
+msgid "1 Day"
+msgstr "1 день"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:185
+msgid "Auto Delete entries older than:"
+msgstr "Автоматически удалять записи старее чем:"
+
+#. translators: Commercial Add-On, option for auto anonymize
+#: add-on/gb-add-on.php:173
+msgid "Be very carefull with this option."
+msgstr "При пользовании этой опцией проявляйте повышенную осторожность."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:183
+msgid "This setting will enable automatic deletion of entries older than a certain date."
+msgstr "Данная настройка включит автоматическое удаление записей, возраст которых превышает заданный."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:181
+msgid "Auto Delete entries after a certain time."
+msgstr "Автоматически удалять записи по прошествии определённого времени."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:179
+msgid "Auto Delete"
+msgstr "Автоматическое удаление"
+
+#. translators: %s is a link to the privacy policy page.
+#: frontend/gb-form.php:401
+msgid "Accept %sPrivacy Policy%s"
+msgstr "Согласиться с %sполитикой обработки персональных данных%s"
+
+#: frontend/gb-form-posthandling.php:185
+msgid "You did not accept the privacy policy, even though it is mandatory."
+msgstr "Вы не согласились с политикой обработки персональных данных, а это обязательно."
+
+#: admin/tabs/gb-formtab.php:284
+msgid "Privacy checkbox"
+msgstr "Флажок конфиденциальности"
+
+#. translators: The GDPR law often has a country specific name
+#: admin/tabs/gb-formtab.php:127
+msgid "Since May 2018 there is a GDPR law in the EU about privacy and personal information that is being stored."
+msgstr "В Европейском Союзе с мая 2018-ого года начинает действовать закон общего регламента по защите данных (GDPR), касающийся конфиденциальной информации и персональных данных, которые хранятся."
+
+#: admin/tabs/gb-formtab.php:124
+msgid "Store IP Address and hostname for each entry."
+msgstr "Сохранять IP-адрес и доменное имя хоста для каждой записи."
+
+#: admin/tabs/gb-formtab.php:117
+msgid "Store IP Address"
+msgstr "Сохранять IP-адрес"
+
+#: admin/gb-page-export.php:266
+msgid "Export user entries from this website."
+msgstr "Экспортировать записи отдельного пользователя на этом сайте."
+
+#: admin/gb-page-export.php:91
+msgid "Meta Fields (if the add-on is active)"
+msgstr "Мета-поля (если активно дополнение)"
+
+#: admin/gb-page-export.php:37
+msgid "Export guestbook entries for a user"
+msgstr "Экспортировать записи отдельного пользователя"
+
+#: admin/gb-page-entries.php:241
+msgid "Search entries"
+msgstr "Искать записи"
+
+#: admin/gb-page-export.php:258 admin/gb-page-export.php:259
+#: admin/gb-page-entries.php:238 admin/gb-page-entries.php:239
+msgid "User Email"
+msgstr "E-mail пользователя"
+
+#: admin/gb-page-export.php:253 admin/gb-page-entries.php:233
+msgid "Select one option below, either User ID or Email address"
+msgstr "Выберите опцию ниже: идентификатор пользователя или его e-mail"
+
+#: admin/gb-page-add-on.php:94
+msgid "Sitemap support for popular SEO/Sitemap plugins."
+msgstr "Поддержка карты сайта для популярных SEO-плагинов и плагинов, строящих карту сайта."
+
+#: admin/gb-page-import.php:25 admin/tabs/gb-admintab.php:18
+#: admin/tabs/gb-debugtab.php:19 admin/tabs/gb-antispamtab.php:18
+#: admin/tabs/gb-readingtab.php:18 admin/tabs/gb-emailtab.php:18
+#: admin/tabs/gb-uninstalltab.php:18 admin/tabs/gb-formtab.php:18
+#: admin/gb-page-gwolle-gb.php:18 admin/gb-page-add-on.php:28
+#: admin/gb-page-settings.php:18 admin/gb-page-settings.php:117
+#: admin/gb-page-export.php:20 admin/gb-page-entries.php:18
+#: admin/gb-page-entries.php:537 admin/gb-page-editor.php:18
+#: admin/gb-page-editor.php:535
+msgid "You need a higher level of permission."
+msgstr "Вам нужен более высокий уровень допуска."
+
+#. translators: Commercial Add-On. Location of the display.
+#: add-on/gb-add-on.php:221
+msgid "Location for display"
+msgstr "Местоположение для отображения"
+
+#: admin/gb-page-add-on.php:93
+msgid "Email button to contact each author (optional)."
+msgstr "Кнопка электронной почты для связи с каждым автором (по желанию)."
+
+#: admin/gb-page-add-on.php:83
+msgid "Average star rating per guestbook, including a widget."
+msgstr "Средний рейтинг в звёздах для отдельных гостевых книг, в том числе в виджете."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:154
+msgid "The email address of the author will be added to the metabox."
+msgstr "В мета-бокс будет добавлен адрес электронной почты автора."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:152
+msgid "Show author email in Metabox."
+msgstr "Показывать в метабоксе адрес электронной почты автора."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:150
+msgid "Author Email"
+msgstr "Адрес электронной почты автора"
+
+#. translators: Commercial Add-On Widget
+#: add-on/gb-add-on.php:109
+msgid "Average Star Rating"
+msgstr "Средний рейтинг в звёздах"
+
+#. translators: Commercial Add-On Widget
+#: add-on/gb-add-on.php:107
+msgid "Gwolle GB: Average Star Rating"
+msgstr "Гостевая книга Gwolle: средний рейтинг в звёздах"
+
+#. translators: Commercial Add-On Widget
+#: add-on/gb-add-on.php:105
+msgid "Displays the average star rating of a guestbook."
+msgstr "Показывает для отдельной гостевой книги средний рейтинг в звёздах."
+
+#. translators: Commercial Add-On metabox line
+#: add-on/gb-add-on.php:93
+msgid "Email author"
+msgstr "Написать автору письмо"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:35
+msgid "Miscellaneous"
+msgstr "Прочее"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:209
+msgid "There are no Meta Fields saved yet. Please go to the Form tab, enter a field and save it."
+msgstr "Мета-поля не заданы. Вы можете задать и сохранить их на вкладке «Форма»."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:135
+msgid "Delete this string row?"
+msgstr "Удалить это текстовое поле?"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:133
+msgid "Delete this meta field?"
+msgstr "Удалить это мета-поле?"
+
+#: admin/gb-page-add-on.php:146
+msgid "It is just a hobby for me and even if it is not about the money, I still enjoy seeing some money in return for my work."
+msgstr "Для меня это просто хобби, которым я занимаюсь не ради денег, но получать за эту работу деньги мне всё же приятно."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:162
+msgid "Show delete link in Metabox for author."
+msgstr "Показывать ссылку удаления автору."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:160
+msgid "Show delete link in Metabox for moderators."
+msgstr "Показывать ссылку удаления модераторам."
+
+#. translators: Commercial Add-On description
+#: add-on/gb-add-on.php:18
+msgid "Gwolle Guestbook: The Add-On is the add-on for Gwolle Guestbook that gives extra functionality for your guestbook. Meta Fields, Star ratings, Social Sharing and much more."
+msgstr "Гостевая книга Gwolle: Дополнение – это дополнение для Гостевой книги Gwolle, обеспечивающее дополнительные функциональные возможности. Мета-поля, рейтинг в звёздах, возможность поделиться в социальных сетях и многое другое."
+
+#: admin/gb-page-add-on.php:147
+msgid "If you buy this Add-On, that will encourage me and does add motivation to keep maintaining and supporting this guestbook software. It is a good way to support me and my work."
+msgstr "Если Вы купите данное Дополнение, это меня дополнительно воодушевит и несомненно добавит мотивации для дальнейшей разработки и поддержки всего этого софта для устроения гостевых книг. Это хороший способ поддержать меня и мою работу."
+
+#: admin/gb-page-add-on.php:145
+msgid "Over the last few years I put about 1000+ hours into this Guestbook plugin in development and support."
+msgstr "За последние несколько лет я потратил больше тысячи часов на разработку и поддержку данного плагина."
+
+#: admin/gb-page-add-on.php:38
+msgid "Development"
+msgstr "Разработка"
+
+#. translators: Commercial Add-On. %s is the value/number of votes.
+#: add-on/gb-add-on.php:273
+msgid "Average Rating: <strong>%s out of %s</strong> (%s votes)"
+msgstr "Средний рейтинг: <strong>%s из %s</strong> (%s голосов)"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:247
+msgid "+ Add new string."
+msgstr "+ Добавить новую строку."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:245
+msgid "Example: Review"
+msgstr "Пример: Отзыв"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:243
+msgid "New String"
+msgstr "Новая строка"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:241
+msgid "Example: Guestbook"
+msgstr "Пример: Гостевая книга"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:239
+msgid "Old String"
+msgstr "Старая строка"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:237
+msgid "Here you can replace text strings throughout the frontend form, the list of entries, and the messages that get displayed for the form."
+msgstr "Здесь Вы можете заменить текстовые строки, которые отображаются во фронтендовой форме, в списке записей, а также сообщения, которые высвечиваются при работе с формой."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:235
+msgid "String Replacement"
+msgstr "Замена строк"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:231
+msgid "The average will be shown above the list of entries."
+msgstr "Над списком записей будет показано среднее значение."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:229
+msgid "Show Average Star Rating"
+msgstr "Показать средний рейтинг"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:227
+msgid "Show Average"
+msgstr "Показывать среднее"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:225
+msgid "Use star rating so visitors can give a star rating for your website or post."
+msgstr "Используйте рейтинг в звёздах, так что посетители смогут оценивать Ваш веб-сайт или отдельный пост."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:219
+msgid "Select the Social Media services you want enabled for sharing."
+msgstr "Выберите социальные сети, для которых Вы хотите включить функцию «поделиться»."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:217
+msgid "Sharing Services"
+msgstr "Поделиться в соцсетях"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:215
+msgid "Show share icons for Social Media in the metabox. Below you can select which ones and their order."
+msgstr "Показывать в мета-боксе иконки для отправки в социальные сети. Ниже Вы можете выбрать, которые именно и в каком порядке."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:213
+msgid "Share on Social Media"
+msgstr "Поделиться в социальных сетях"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:207
+msgid "None."
+msgstr "Нигде."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:205
+msgid "In metabox."
+msgstr "В мета-боксе."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:203
+msgid "Under content."
+msgstr "Под текстом."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:201
+msgid "Above content."
+msgstr "Над текстом."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:199
+msgid "Configure where you want the extra fields displayed."
+msgstr "Настройте, где должны отображаться дополнительные поля."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:164
+msgid "A link to delete the entry will be added to the metabox. Only visible for moderators and the author."
+msgstr "В мета-бокс будет добавлена ссылка для удаления. Её будет видно только модераторам и автору."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:158
+msgid "Show delete link in Metabox."
+msgstr "Показывать в мета-боксе ссылку для удаления."
+
+#. translators: Settings page, option for delete link
+#: add-on/gb-add-on.php:156
+msgid "Delete link"
+msgstr "Ссылка для удаления"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:148
+msgid "A link to the single entry will be added to the metabox."
+msgstr "В мета-бокс будет добавлена ссылка на отдельную запись."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:146
+msgid "Show permalink in Metabox."
+msgstr "Показывать в мета-боксе постоянную ссылку."
+
+#. translators: Settings page, option for permalink
+#: add-on/gb-add-on.php:144
+msgid "Permalink"
+msgstr "Постоянная ссылка"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:131
+msgid "+ Add new field."
+msgstr "+ Добавить новое поле."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:129
+msgid "Name:"
+msgstr "Название:"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:127
+msgid "Slug:"
+msgstr "Описательная часть (slug):"
+
+#. translators: Commercial Add-On. At the top of the form.
+#: add-on/gb-add-on.php:125
+msgid "Top"
+msgstr "Наверх"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:123
+msgid "The name of the field is what you will see in the label and placeholder in the form."
+msgstr "Название поля – это то, что Вы увидите в подписи и в подсказывающем тексте в поле для ввода."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:121
+msgid "The slug of the field is where your data is attached to. Only change the slug if you know what you are doing."
+msgstr "Описательная часть (slug) поля – это то, куда Ваши данные прикрепляются. Меняйте этот параметр только когда знаете, что делаете."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:119
+msgid "Configure the extra fields that you want."
+msgstr "Задайте дополнительные поля, которые желаете."
+
+#. translators: Commercial Add-On. %s is a version number.
+#: add-on/gb-add-on.php:115
+msgid "Gwolle Guestbook: The Add-On requires Gwolle Guestbook version %s. You have version %s. Go to your %sPlugins%s page to update Gwolle Guestbook."
+msgstr "Для гостевой книги Gwolle: Дополнение требуется, чтобы была установлена Гостевая книга Gwolle версии %s. У Вас версия %s. Перейдите на страницу %sПлагины%s, на которой Вы сможете обновить версию до текущей."
+
+#. translators: Commercial Add-On. %s is a link.
+#: add-on/gb-add-on.php:113
+msgid "Gwolle Guestbook: The Add-On requires Gwolle Guestbook. Go to your %sPlugins%s page to install or activate Gwolle Guestbook."
+msgstr "Для работы Гостевой книги Gwolle: Дополнение требуется установленная и активированная Гостевая книга Gwolle. Перейдите на страницу %sПлагины%s, на которой Вы сможете установить и активировать Гостевую книгу Gwolle."
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:97
+msgid "Rating"
+msgstr "Рейтинг"
+
+#. translators: Commercial Add-On: Post it on Social Media
+#: add-on/gb-add-on.php:89
+msgid "Post on"
+msgstr "Опубликовать в"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:85
+msgid "Delete"
+msgstr "Удалить"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:83
+msgid "Delete entry"
+msgstr "Удалить запись"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:43
+msgid "Add admin reply"
+msgstr "Добавить ответ администратора"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:37
+msgid "Strings"
+msgstr "Строки"
+
+#. translators: Commercial Add-On: Settings page tab (typo in 1.0.4)
+#: add-on/gb-add-on.php:33
+msgid "Miscellanious"
+msgstr "Прочее"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:31
+msgid "Star Rating"
+msgstr "Рейтинг в звёздах"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:29
+msgid "Social Media"
+msgstr "Социальные сети"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:27
+msgid "Reading Fields"
+msgstr "Отображаемые поля"
+
+#. translators: Commercial Add-On: Settings page tab
+#: add-on/gb-add-on.php:25
+msgid "Form Fields"
+msgstr "Поля в форме отправки"
+
+#. translators: Commercial Add-On
+#: add-on/gb-add-on.php:22
+msgid "Add-On Settings"
+msgstr "Настройки Дополнения"
+
+#. translators: %s is a link
+#: admin/tabs/gb-antispamtab.php:229
+msgid "If you want to know more about Stop Forum Spam and how it works, please read about it on their %swebsite%s."
+msgstr "Если Вы хотите узнать подробнее про Stop Forum Spam и как он работает, пожалуйста, прочтите об этом на его %sвеб-сайте%s."
+
+#. translators: First 2 %s are a strong element. Second %s is for a link.
+#: admin/tabs/gb-antispamtab.php:194
+msgid "Sorry, wasn't able to locate your %sWordPress API key%s. You can enter it at the %sAkismet configuration page%s."
+msgstr "К сожалению, не удалось обнаружить Ваш %sвордпрессовский ключ API%s. Вы можете ввести его на %sстранице конфигурирования Akismet%s."
+
+#. translators: %s is a link
+#: admin/tabs/gb-antispamtab.php:105
+msgid "If you want to know more about what a Nonce is and how it works, please read about it on the %sWordPress Codex%s."
+msgstr "Если Вы хотите подробнее узнать, что такое одноразовые проверочные номера и как они работают, пожалуйста, прочтите об этом в %sКодексе WordPress%s."
+
+#. translators: %s is a link
+#: admin/gb-page-gwolle-gb.php:335
+msgid "If this plugin has any value to you, then please leave a review at %sthe plugin page%s at wordpress.org."
+msgstr "Если этот плагин как-то Вам пригодился, пожалуйста, напишите отзыв на %sего странице%s на сайте wordpress.org."
+
+#. translators: %s is a link
+#: admin/gb-page-gwolle-gb.php:319
+msgid "I will make a request on %smake/polyglots%s to have you added as validator for this plugin/locale."
+msgstr "Я сделаю запрос, чтобы Вас добавили в качестве проверяющего лица для данного плагина и Вашего языка."
+
+#. translators: %s is a link
+#: admin/gb-page-gwolle-gb.php:315
+msgid "Translations can be added very easily through %sGlotPress%s."
+msgstr "Переводы можно легко добавлять посредством %sGlotPress%s."
+
+#. translators: %s is a link
+#: admin/gb-page-gwolle-gb.php:306
+msgid "If you have a problem or a feature request, please post it on the %ssupport forum at wordpress.org%s."
+msgstr "Если Вы столкнулись с проблемой или желаете сделать запрос на добавление новой функциональной возможности, пожалуйста, напишите об этом на %sфоруме поддержки%s."
+
+#: admin/gb-page-gwolle-gb.php:192
+msgid "Sorry, but the function %smail()%s required to notify you by mail is not enabled in your PHP configuration. You might want to install a WordPress plugin that uses SMTP instead of %smail()%s. Or you can contact your hosting provider."
+msgstr "К сожалению, функция %smail()%s, необходимая, чтобы оповещать Вас по электронной почте, в Вашей конфигурации PHP отключена. Вы можете установить вордпрессовский плагин, который вместо %smail()%s использует SMTP. Или обратитесь к хостинг-провайдеру."
+
+#. translators: %s is a code element
+#: admin/gb-page-editor.php:163
+msgid "Example: %shttp://www.example.com/%s"
+msgstr "Пример: %shttp://www.example.com/%s"
+
+#. translators: %s is a link
+#: admin/gb-page-editor.php:135 admin/gb-page-editor.php:222
+msgid "Line breaks will not be visible to the visitors due to your %ssettings%s."
+msgstr "Переводы на новую строку для посетителей сайта будут невидны из-за Ваших %sнастроек%s."
+
+#. translators: %s is a link
+#: admin/gb-page-add-on.php:133
+msgid "For comparison you can also see the %sdemo site without the add-on%s enabled."
+msgstr "Для сравнения Вы также можете посмотреть %sтот же демонстрационный сайт без дополнения%s."
+
+#: admin/gb-page-add-on.php:129
+msgid "Demo without the Add-On."
+msgstr "Как это выглядит без Дополнения."
+
+#. translators: %s is a link
+#: admin/gb-page-add-on.php:126
+msgid "The demo site of this plugin is available with the add-on enabled at %sthe demo site%s."
+msgstr "Демонстрацию этого плагина с включённым Дополнением можно посмотреть %sздесь%s."
+
+#: admin/gb-page-add-on.php:122
+msgid "Demo with the Add-On."
+msgstr "Как это выглядит с Дополнением."
+
+#: admin/gb-page-add-on.php:111
+msgid "Support for the add-on is also at the MOJO Marketplace website."
+msgstr "Поддержка дополнения осуществляется также на сайте MOJO Marketplace."
+
+#. translators: %s is a link
+#: admin/gb-page-add-on.php:110
+msgid "You can buy this add-on at the %sMOJO Marketplace%s for only $ 9."
+msgstr "Вы можете купить это дополнение в %sMOJO Marketplace%s всего за 9 $."
+
+#: admin/gb-page-add-on.php:106
+msgid "Buy the Add-On."
+msgstr "Купить Дополнение."
+
+#: admin/gb-page-add-on.php:92
+msgid "Permalink button in each entry for easy access (optional)."
+msgstr "Кнопка с прямой ссылкой в каждой записи для лёгкого доступа (по желанию)."
+
+#: admin/gb-page-add-on.php:91
+msgid "Delete button in each entry for the moderator and author (optional)."
+msgstr "Кнопка удаления в каждой записи для модератора или автора (по желанию)."
+
+#: admin/gb-page-add-on.php:90
+msgid "Easy String Replacement in the default text so you can make this guestbook into a review section or anything you want."
+msgstr "Лёгкая замена строк в тексте по умолчанию, так что Вы легко сможете превратить эту гостевую книгу в раздел отзывов или во что пожелаете."
+
+#: admin/gb-page-add-on.php:86
+msgid "Admin reply on the frontend with AJAX."
+msgstr "Ответ администратора во фронтенде посредством AJAX."
+
+#: admin/gb-page-add-on.php:85
+msgid "Preview for the admin editor form."
+msgstr "Предварительный просмотр в редакторе администратора."
+
+#: admin/gb-page-add-on.php:84
+msgid "Preview for the frontend form."
+msgstr "Предварительный просмотр для формы во фронтенде."
+
+#: admin/gb-page-add-on.php:82
+msgid "Star Ratings, with voting and display and Rich Snippets for SEO (optional)."
+msgstr "Рейтинги в звёздах, с голосованием, показом и расширенными фрагментами для поисковой оптимизации (по желанию)."
+
+#: admin/gb-page-add-on.php:81
+msgid "Social Media Sharing (optional)."
+msgstr "Возможность поделиться в социальных сетях (по желанию)."
+
+#: admin/gb-page-add-on.php:80
+msgid "Meta Fields. Add any field you want; company, phone number, you name it."
+msgstr "Мета-поля. Добавьте любое поле, какое пожелаете; компанию, номер телефона или что сами захотите."
+
+#: admin/gb-page-add-on.php:78
+msgid "Current features include:"
+msgstr "В настоящее время возможности следующие:"
+
+#: admin/gb-page-add-on.php:66
+msgid "Gwolle Guestbook: The Add-On is a commercial add-on for Gwolle Guestbook that gives extra functionality for your guestbook."
+msgstr "Гостевая книга Gwolle: Дополнение – это коммерческое дополнение для гостевой книги Gwolle, которое обеспечивает в Вашей гостевой книге дополнительные функциональные возможности."
+
+#: admin/gb-page-add-on.php:37
+msgid "Demo"
+msgstr "Демонстрация"
+
+#: admin/gb-page-add-on.php:36
+msgid "Buy Now"
+msgstr "Купить"
+
+#: admin/gb-page-add-on.php:34
+msgid "Features"
+msgstr "Функциональные возможности"
+
+#: admin/gb-page-add-on.php:33 admin/gb-page-add-on.php:43
+msgid "Gwolle Guestbook: The Add-On"
+msgstr "Гостевая книга Gwolle: Дополнение"
+
+#. translators: Menu entry
+#: admin/gb-page-add-on.php:16 admin/gb-page-editor.php:101
+msgid "The Add-On"
+msgstr "Дополнение"
+
+#: frontend/gb-total.php:68
+msgid "%d entry."
+msgid_plural "%d entries."
+msgstr[0] "%d запись."
+msgstr[1] "%d записи."
+msgstr[2] "%d записей."
+
+#. translators: Reviews on the plugin page at WordPress.org
+#: admin/gb-page-gwolle-gb.php:35
+msgid "Review"
+msgstr "Отзывы"
+
+#. translators: Log message
+#: functions/gb-log.php:115
+msgid "Entry marked by Stop Forum Spam."
+msgstr "Запись помечена сервисом Stop Forum Spam."
+
+#: frontend/gwolle_gb-entry.php:229
+msgid "..."
+msgstr "..."
+
+#: frontend/gb-read.php:37 frontend/gb-read.php:40 frontend/gb-read.php:43
+msgid "Sorry, but this entry does not seem to exist."
+msgstr "Извините, но эта запись, похоже, не существует."
+
+#: admin/tabs/gb-readingtab.php:254
+msgid "Admin Avatar"
+msgstr "Аватар администратора"
+
+#: admin/tabs/gb-antispamtab.php:226
+msgid "Stop Forum Spam is an external service that acts as a spamfilter for guestbook entries."
+msgstr "Stop Forum Spam – это внешний сервис, который работает как спамовый фильтр для записей гостевой книги."
+
+#: admin/tabs/gb-antispamtab.php:222
+msgid "Use Stop Forum Spam."
+msgstr "Использовать Stop Forum Spam."
+
+#: admin/tabs/gb-antispamtab.php:214 admin/gb-page-gwolle-gb.php:262
+msgid "Stop Forum Spam"
+msgstr "Stop Forum Spam"
+
+#: admin/tabs/gb-antispamtab.php:180
+msgid "What's Akismet?"
+msgstr "Что такое Akismet?"
+
+#: admin/gb-page-editor.php:98
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+#: frontend/gb-form-posthandling.php:247 frontend/gb-form-posthandling.php:263
+#: frontend/gb-form-posthandling.php:282 frontend/gb-form-posthandling.php:292
+#: frontend/gb-form-posthandling.php:310 frontend/gb-form-posthandling.php:371
+#: frontend/gb-form-posthandling.php:403
+msgid "Your entry was marked as spam. Please try again."
+msgstr "Ваша запись была помечена как спам. Попробуйте ещё раз."
+
+#: admin/tabs/gb-antispamtab.php:66
+msgid "This option will refuse to accept entries marked by Honeypot, Nonce, Link Checker, Form Timeout, Akismet and Stop Forum Spam. Users will see the form again after submit, with an error stating that it is recognized as spam."
+msgstr "Записи, помеченные ловушкой спама, проверкой на одноразовые номера, детектором ссылок, таймером отправки, плагином Akismet или Stop Forum Spam как спам, не будут приниматься. В таком случае отправителю будет показана форма отправки с сообщением об ошибке, оповещающим, что его запись была расценена как спамовая."
+
+#: admin/tabs/gb-antispamtab.php:64
+msgid "Entries that are marked as spam will be placed in your spam folder by default."
+msgstr "По умолчанию, записи, помеченные как спам, будут помещаться в папку «Спам»."
+
+#: admin/tabs/gb-antispamtab.php:61
+msgid "Refuse spam when recognized."
+msgstr "Не принимать записи, расцененные как спам."
+
+#. translators: Settings page, option for refusing spam
+#: admin/tabs/gb-antispamtab.php:53
+msgid "Refuse Spam"
+msgstr "Не принимать спам"
+
+#. translators: Is in Trashcan
+#: admin/gb-page-entries.php:220 admin/gb-page-entries.php:426
+#: admin/gb-page-editor.php:250 admin/gb-page-editor.php:302
+msgid "In Trash"
+msgstr "В урне"
+
+#: admin/gb-page-entries.php:311 admin/gb-page-entries.php:328
+msgid "Status"
+msgstr "Статус"
+
+#. translators: Setting for SMTP mail from header
+#: admin/tabs/gb-emailtab.php:120
+msgid "Send from address"
+msgstr "Отправлять с адреса"
+
+#. translators: Settings page tab
+#: admin/gb-page-settings.php:61
+msgid "Notifications"
+msgstr "Уведомления"
+
+#. translators: %s is the number of characters
+#: admin/tabs/gb-antispamtab.php:129
+msgid "The content has a limit set to %s characters, the author name to %s characters."
+msgstr "Для текста записи установлен максимальный размер в %s символов, для имени автора – в %s символов."
+
+#: admin/gb-page-import.php:469
+msgid "No comments found. Please try again."
+msgstr "Комментариев не найдено. Пожалуйста, попробуйте ещё раз."
+
+#: admin/gb-page-gwolle-gb.php:316
+msgid "You can start translating strings there for your locale. They need to be validated though, so if there's no validator yet, and you want to apply for being validator (PTE), please post it on the %ssupport forum%s."
+msgstr "Вы можете начать переводить слова и фразы плагина на Ваш родной язык.  Правда, прежде чем предложенные переводы вступят в силу, они вначале должны быть утверждены. Поэтому, если пока нет человека, который этим занимается (для Вашего языка), и Вы хотите им стать, пожалуйста, напишите об этом на %sфоруме поддержки%s."
+
+#: admin/gb-page-gwolle-gb.php:311
+msgid "Translations."
+msgstr "Переводы."
+
+#: admin/gb-page-gwolle-gb.php:308
+msgid "If you send me an email, I will not reply. Please use the support forum."
+msgstr "Если Вы напишете мне письмо, я не отвечу. Пожалуйста, используйте форум поддержки."
+
+#: admin/gb-page-gwolle-gb.php:307
+msgid "I will do my best to respond as soon as possible."
+msgstr "Я постараюсь ответить как можно скорее."
+
+#: admin/gb-page-gwolle-gb.php:302
+msgid "Support."
+msgstr "Поддержка."
+
+#: admin/gb-page-gwolle-gb.php:34
+msgid "Support and Translations"
+msgstr "Поддержка и переводы"
+
+#: admin/gb-page-entries.php:569
+msgid "It seems you checked more entries then were even listed on the page."
+msgstr "Похоже, Вы проверили даже больше записей, чем было отображено на странице."
+
+#: admin/gb-page-import.php:320 admin/gb-page-import.php:401
+#: admin/gb-page-import.php:481 admin/gb-page-gwolle-gb.php:352
+#: admin/gb-page-settings.php:135 admin/gb-page-settings.php:210
+#: admin/gb-page-settings.php:288 admin/gb-page-settings.php:312
+#: admin/gb-page-settings.php:387 admin/gb-page-settings.php:476
+#: admin/gb-page-entries.php:547 admin/gb-page-entries.php:552
+#: admin/gb-page-editor.php:544 admin/gb-page-editor.php:550
+msgid "Nonce check failed. Please try again."
+msgstr "Не пройдена проверка по одноразовому проверочному номеру. Пожалуйста, попробуйте ещё раз."
+
+#: admin/gb-ajax-management.php:349 admin/gb-page-export.php:138
+#: admin/gb-page-export.php:303
+msgid "Nonce check failed. Please go back and try again."
+msgstr "Не пройдена проверка по одноразовому проверочному номеру. Пожалуйста, вернитесь и попробуйте ещё раз."
+
+#: admin/tabs/gb-antispamtab.php:126
+msgid "This will scan entries for long words, which can be considered abusive. If there is a word with long text found, it will be automatically set to unchecked and you will need to moderate it manually."
+msgstr "Будет осуществляться проверка на длинные слова, что может быть признаком вредительства. Если будет найдено ненормально длинное слово, запись автоматически будет помечена как непроверенная и Вам нужно будет проверить её самостоятельно."
+
+#: admin/tabs/gb-antispamtab.php:122
+msgid "Scan for Long Text."
+msgstr "Проверять на длинный текст."
+
+#: admin/tabs/gb-antispamtab.php:114
+msgid "Long Text"
+msgstr "Длинный текст"
+
+#: admin/gb-page-gwolle-gb.php:264
+msgid "Super Simple Slider"
+msgstr "Super Simple Slider"
+
+#: admin/gb-page-gwolle-gb.php:263
+msgid "MarkItUp"
+msgstr "MarkItUp"
+
+#. translators: %s is the number of file parts
+#: admin/gb-page-export.php:72
+msgid "The download will happen in a CSV file in %s part."
+msgid_plural "The download will happen in a CSV file in %s parts."
+msgstr[0] "Произойдёт скачивание CSV-файла, всего %s часть."
+msgstr[1] "Произойдёт скачивание CSV-файла, всего %s части."
+msgstr[2] "Произойдёт скачивание CSV-файла, всего %s частей."
+
+#: admin/tabs/gb-formtab.php:112
+msgid "Submit the form while staying on the same page and place, without a new page load."
+msgstr "Отправлять форму, оставаясь на той же странице и на том же месте, без загрузки новой страницы."
+
+#: functions/gb-debug.php:52 admin/gb-page-import.php:495
+msgid "You have a very old version of PHP. Please contact your hosting provider and request an upgrade."
+msgstr "У Вас очень старая версия PHP. Пожалуйста, обратитесь к Вашему хостинг-провайдеру и попросите обновить версию на более новую."
+
+#: admin/tabs/gb-formtab.php:110
+msgid "Use AJAX to submit the form."
+msgstr "При отправлении формы использовать AJAX."
+
+#: admin/tabs/gb-formtab.php:103
+msgid "Use AJAX"
+msgstr "Использование AJAX"
+
+#: admin/gb-page-import.php:643
+msgid "Your data seems to be corrupt. Saving failed and import failed."
+msgstr "Похоже, что Ваши данные повреждены. Сохранение и импортировку выполнить не удалось."
+
+#: admin/gb-page-settings.php:486
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: admin/gb-page-gwolle-gb.php:31
+msgid "Third Party"
+msgstr "От других разработчиков"
+
+#: frontend/gb-widget.php:394
+msgid "0 means all."
+msgstr "0 означает все."
+
+#: frontend/gb-widget.php:391
+msgid "Book ID:"
+msgstr "Идентификатор книги:"
+
+#: frontend/gb-widget.php:371
+msgid "Use Slider View."
+msgstr "Отображать в стиле слайдов."
+
+#: admin/gb-page-gwolle-gb.php:278
+msgid "Shortcode:"
+msgstr "Шорткод:"
+
+#: functions/gb-debug.php:75
+msgid "MySQL Column Charset:"
+msgstr "Кодировка столбцов MySQL:"
+
+#. translators: at a certain time
+#: frontend/gwolle_gb-entry.php:107 functions/gb-privacy.php:145
+msgid "at"
+msgstr "в"
+
+#: admin/tabs/gb-antispamtab.php:107
+msgid "If your website uses caching, it is possible that you get false-positives in your spamfolder. If this is the case, you could either disable the Nonce, or disable caching for the guestbook page."
+msgstr "Если на Вашем сайте используется кэширование, возможны ложные срабатывания, в результате которых отдельные записи неверно помечаются как спам. Если Вы с этим столкнулись, то можете либо отключить одноразовые проверочные номера, либо отключить кэширование на странице гостевой книги."
+
+#: admin/tabs/gb-antispamtab.php:101
+msgid "This will add a Nonce to the form. It is a way to check for a human user. If it does not validate, the entry will be marked as spam."
+msgstr "В форму будет добавляться одноразовый проверочный номер. Это ещё один способ проверить, что посетитель – человек. Если проверка не будет пройдена, запись будет помечена как спам."
+
+#: admin/tabs/gb-antispamtab.php:97
+msgid "Use Nonce."
+msgstr "Использовать проверочный номер."
+
+#: admin/tabs/gb-antispamtab.php:89
+msgid "Nonce"
+msgstr "Проверочный номер"
+
+#: admin/gb-page-editor.php:112
+msgid "Log"
+msgstr "История записи"
+
+#: admin/gb-page-gwolle-gb.php:29 admin/gb-page-editor.php:109
+msgid "Visibility"
+msgstr "Видимость"
+
+#. translators: Menu entry
+#: admin/gwolle-gb-hooks.php:63
+msgid "Add/Edit entry"
+msgstr "Добавить/Редактировать запись"
+
+#. translators: %s is the number of comments
+#: admin/gb-page-import.php:202 admin/gb-page-import.php:239
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s комментарий"
+msgstr[1] "%s комментария"
+msgstr[2] "%s комментариев"
+
+#. translators: Infinite Scroll
+#: gwolle-gb-hooks.php:87
+msgid "No more entries."
+msgstr "Записей больше нет."
+
+#. translators: Infinite Scroll
+#: gwolle-gb-hooks.php:86
+msgid "Loading more..."
+msgstr "Загружается ещё..."
+
+#: functions/gb-debug.php:136
+msgid "Just a test"
+msgstr "Просто проверка"
+
+#: functions/gb-debug.php:121
+msgid "Test entry, delete if you wish."
+msgstr "Проверочная запись. Если хотите, можете её удалить."
+
+#: functions/gb-debug.php:92
+msgid "MySQL variables:"
+msgstr "Переменные MySQL:"
+
+#: functions/gb-debug.php:81
+msgid "MySQL / MySQLi:"
+msgstr "MySQL / MySQLi:"
+
+#: functions/gb-debug.php:66 functions/gb-debug.php:68
+msgid "MySQL Charset:"
+msgstr "Кодировка MySQL:"
+
+#: functions/gb-debug.php:58
+msgid "MySQL Version:"
+msgstr "Версия MySQL:"
+
+#: functions/gb-debug.php:47
+msgid "PHP Version:"
+msgstr "Версия PHP:"
+
+#: functions/gb-debug.php:39
+msgid "Active plugins:"
+msgstr "Активные плагины:"
+
+#: functions/gb-debug.php:28
+msgid "WordPress theme:"
+msgstr "Тема WordPress:"
+
+#: functions/gb-debug.php:23
+msgid "WordPress version:"
+msgstr "Версия WordPress:"
+
+#: admin/tabs/gb-readingtab.php:166
+msgid "Show a link in the pagination for All entries."
+msgstr "Показывать в листателе страниц ссылку для отображения сразу всех записей."
+
+#: admin/tabs/gb-readingtab.php:154
+msgid "Use standard navigation with links to all pages, or use infinite scroll where entries will be added to the bottom as you are reading."
+msgstr "Используйте стандартную навигацию со ссылками на страницы или же используйте бесконечную прокрутку, при которой записи будут добавляться снизу по мере прочтения."
+
+#: admin/tabs/gb-readingtab.php:152
+msgid "Infinite Scroll"
+msgstr "Бесконечная прокрутка"
+
+#: admin/tabs/gb-readingtab.php:145
+msgid "Navigation"
+msgstr "Навигация"
+
+#: functions/gb-mail.php:234 admin/tabs/gb-emailtab.php:240
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"An admin has just added or changed a reply message to your guestbook entry at '%blog_name%'.\n"
+"\n"
+"Have a nice day.\n"
+"The editors at %blog_name%.\n"
+"\n"
+"\n"
+"Website address: %blog_url%\n"
+"Admin Reply:\n"
+"%admin_reply%\n"
+"\n"
+"\n"
+"Original entry posted on %date%:\n"
+"%entry_content%\n"
+msgstr ""
+"\n"
+"Здравствуйте,\n"
+"\n"
+"Администратор только что добавил или изменил ответ к Вашему сообщению в гостевой книге на сайте '%blog_name%'.\n"
+"\n"
+"Хорошего Вам дня.\n"
+"Редакторы сайта %blog_name%.\n"
+"\n"
+"\n"
+"Адрес веб-сайта: %blog_url%\n"
+"Ответ администратора:\n"
+"%admin_reply%\n"
+"\n"
+"\n"
+"Ваша запись в гостевой книге, отправленная %date%:\n"
+"%entry_content%\n"
+
+#: admin/tabs/gb-debugtab.php:89
+msgid "Run test"
+msgstr "Выполнить тест"
+
+#: admin/tabs/gb-debugtab.php:86
+msgid "This test will attempt to save two test entries, one with standard text and one with Emoji."
+msgstr "Этот тест попробует сохранить две записи: одну с простым текстом и одну с эмодзи."
+
+#: admin/tabs/gb-debugtab.php:83
+msgid "Test"
+msgstr "Тест"
+
+#: admin/tabs/gb-debugtab.php:67
+msgid "Emoji test:"
+msgstr "Тест с эмодзи:"
+
+#: admin/tabs/gb-debugtab.php:62 admin/tabs/gb-debugtab.php:74
+msgid "Succeeded."
+msgstr "Выполнен успешно."
+
+#: admin/tabs/gb-debugtab.php:59 admin/tabs/gb-debugtab.php:71
+msgid "Failed."
+msgstr "Выполнен неуспешно."
+
+#: admin/tabs/gb-debugtab.php:55
+msgid "Standard test:"
+msgstr "Простой тест:"
+
+#: admin/tabs/gb-debugtab.php:37
+msgid "Please provide this information when posting a support message on the support forum."
+msgstr "Когда будете делать запрос на форуме поддержки, пожалуйста, предоставьте эту информацию."
+
+#. translators: Settings page tab
+#: admin/gb-page-settings.php:62
+msgid "Debug"
+msgstr "Отладка"
+
+#: functions/gb-mail.php:121
+msgid "Log messages:"
+msgstr "Сообщения лога:"
+
+#: admin/gb-page-gwolle-gb.php:171 admin/gb-page-gwolle-gb.php:175
+msgid "Subscribe to RSS Feed"
+msgstr "Подписаться на фид RSS"
+
+#. translators: Log message
+#: functions/gb-log.php:113
+msgid "Entry marked by invalid Nonce."
+msgstr "Запись помечена из-за неправильного одноразового номера."
+
+#. translators: Log message
+#: functions/gb-log.php:116
+msgid "Entry marked for too long text."
+msgstr "Запись помечена из-за слишком длинного фрагмента непрерывного текста."
+
+#. translators: Log message
+#: functions/gb-log.php:114
+msgid "Entry marked by Akismet."
+msgstr "Запись помечена сервисом Akismet."
+
+#. translators: Log message
+#: functions/gb-log.php:112
+msgid "Entry marked by the Honeypot."
+msgstr "Запись помечена ловушкой спама."
+
+#: admin/tabs/gb-antispamtab.php:188 admin/tabs/gb-antispamtab.php:205
+msgid "Akismet is an external service by Automattic that acts as a spamfilter for guestbook entries."
+msgstr "Akismet – внешний сервис, выполняющий в гостевой книге роль спам-фильтра. Разработан и поддерживается компанией «Automatic»."
+
+#: admin/tabs/gb-antispamtab.php:175 admin/gb-page-gwolle-gb.php:261
+msgid "Akismet"
+msgstr "Akismet"
+
+#: admin/tabs/gb-antispamtab.php:83
+msgid "This will add a non-visible input field to the form. It should not get filled in, but when it is, the entry will be marked as spam."
+msgstr "В форме ввода будет содержаться невидимое поле. В случае нормальных сообщений оно будет оставаться пустым; если же в него что-то введено, сообщение будет помечаться как спам."
+
+#: admin/tabs/gb-antispamtab.php:80
+msgid "Use Honeypot."
+msgstr "Использовать ловушку."
+
+#: admin/tabs/gb-antispamtab.php:72
+msgid "Honeypot"
+msgstr "Ловушка для спамовых роботов (Honeypot)"
+
+#: frontend/gb-form-posthandling.php:525
+msgid "Sorry, something went wrong with saving your entry. Please contact a site admin."
+msgstr "К сожалению, отправить Вашу запись не удалось. Пожалуйста, свяжитесь с администратором сайта."
+
+#: frontend/gwolle_gb-entry.php:135
+msgid "Read more"
+msgstr "Читать полностью"
+
+#: frontend/gwolle_gb-entry.php:135
+msgid "Expand this entry and read more"
+msgstr "Развернуть эту запись и читать полностью"
+
+#. translators: BuddyPress profile
+#: functions/gb-user.php:147
+msgid "Visit the profile of"
+msgstr "Смотреть профиль"
+
+#. Author of the plugin
+msgid "Marcel Pol"
+msgstr "Марсел Пол"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "http://zenoweb.nl"
+msgstr "http://zenoweb.nl"
+
+#. translators: Toolbar
+#: gwolle-gb-hooks.php:152
+msgid "%s guestbook entry awaiting moderation"
+msgid_plural "%s guestbook entries awaiting moderation"
+msgstr[0] "%s запись в гостевой книге ожидает проверки"
+msgstr[1] "%s записи в гостевой книге ожидают проверки"
+msgstr[2] "%s записей в гостевой книге ожидают проверки"
+
+#. translators: Menu entry
+#: admin/gwolle-gb-hooks.php:72
+msgid "Export"
+msgstr "Экспортировать"
+
+#. translators: Menu entry
+#: admin/gwolle-gb-hooks.php:69
+msgid "Import"
+msgstr "Импортировать"
+
+#: admin/gwolle-gb-hooks.php:63
+msgid "Entry editor"
+msgstr "Редактор записей"
+
+#. Description of the plugin
+msgid "Gwolle Guestbook is not just another guestbook for WordPress. The goal is to provide an easy and slim way to integrate a guestbook into your WordPress powered site. Don't use your 'comment' section the wrong way - install Gwolle Guestbook and have a real guestbook."
+msgstr "Gwolle Guestbook – не просто ещё одна гостевая книга для WordPress. Цель данного плагина – дать способ встроить гостевую книгу в Ваш сайт на движке Wordpress просто и изящно. Не используйте комментарии Wordpress для того, для чего они не предназначены. Установите Gwolle-GB и Вы получите настоящую гостевую книгу."
+
+#: admin/gb-page-editor.php:519
+msgid "Cancel"
+msgstr "Отмена"
+
+#: admin/gb-page-editor.php:518
+msgid "Cancel saving date and time"
+msgstr "Не сохранять дату и время"
+
+#: admin/gb-page-editor.php:515
+msgid "Save the date and time"
+msgstr "Сохранить дату и время"
+
+#: admin/gb-page-editor.php:502
+msgid "Minute"
+msgstr "Минуты"
+
+#: admin/gb-page-editor.php:500
+msgid "Hour"
+msgstr "Часы"
+
+#: admin/gb-page-editor.php:497
+msgid "Year"
+msgstr "Год"
+
+#. translators: 1: month number (01, 02, etc.), 2: month abbreviation
+#: admin/gb-page-editor.php:492
+msgid "%1$s-%2$s"
+msgstr "%1$s-%2$s"
+
+#: admin/gb-page-editor.php:487
+msgid "Month"
+msgstr "Месяц"
+
+#: admin/gb-page-editor.php:484
+msgid "Day"
+msgstr "День"
+
+#: functions/gb-user.php:159
+msgid "Visit the website of"
+msgstr "Посетите веб-сайт"
+
+#: functions/gb-formatting.php:92
+msgid "No content to display. This entry is empty."
+msgstr "Нет содержимого для отображения. Эта запись пустая."
+
+#: functions/gb-mail.php:109
+msgid "Unchecked"
+msgstr "Непроверено"
+
+#: functions/gb-mail.php:67 functions/gb-mail.php:178
+msgid "New Guestbook Entry"
+msgstr "Новая запись в гостевой книге"
+
+#. translators: Log message
+#: functions/gb-log.php:128
+msgid "Admin reply has been removed."
+msgstr "Ответ администратора удалён."
+
+#. translators: Log message
+#: functions/gb-log.php:127
+msgid "Admin reply has been updated."
+msgstr "Ответ администратора обновлён."
+
+#. translators: Log message
+#: functions/gb-log.php:126
+msgid "Admin reply has been added."
+msgstr "Ответ администратора добавлен."
+
+#. translators: Log message
+#: functions/gb-log.php:125
+msgid "Entry has been untrashed."
+msgstr "Запись извлечена из урны."
+
+#. translators: Log message
+#: functions/gb-log.php:124
+msgid "Entry has been trashed."
+msgstr "Запись помещена в урну."
+
+#. translators: Log message
+#: functions/gb-log.php:123
+msgid "Exported to CSV file"
+msgstr "Экспортировано в файл CSV"
+
+#. translators: Log message
+#: functions/gb-log.php:122
+msgid "Imported from Gwolle-GB"
+msgstr "Импортировано из Gwolle-GB"
+
+#. translators: Log message
+#: functions/gb-log.php:121
+msgid "Imported from WordPress comments"
+msgstr "Импортировано из комментариев WordPress"
+
+#. translators: Log message
+#: functions/gb-log.php:120
+msgid "Imported from DMSGuestbook"
+msgstr "Импортировано из DMSGuestbook"
+
+#. translators: Log message
+#: functions/gb-log.php:119
+msgid "Entry has been edited."
+msgstr "Запись отредактирована."
+
+#. translators: Log message
+#: functions/gb-log.php:111
+msgid "Entry marked as not spam."
+msgstr "Запись помечена как НЕ спам."
+
+#. translators: Log message
+#: functions/gb-log.php:110
+msgid "Entry marked as spam."
+msgstr "Запись помечена как спам."
+
+#. translators: Log message
+#: functions/gb-log.php:109
+msgid "Entry has been checked."
+msgstr "Запись помечена как проверенная."
+
+#. translators: Log message
+#: functions/gb-log.php:108
+msgid "Entry has been locked."
+msgstr "Запись заблокирована."
+
+#: frontend/gb-form.php:428
+msgid "Submit"
+msgstr "Отправить"
+
+#: frontend/gb-form.php:375
+msgid "Answer"
+msgstr "Ответ"
+
+#: frontend/gb-form.php:369
+msgid "Question:"
+msgstr "Вопрос:"
+
+#: frontend/gb-form.php:101
+msgid "Log in to post an entry"
+msgstr "Чтобы оставить запись, войдите в систему"
+
+#. translators: Button text
+#: frontend/gb-form.php:125
+msgid "Write a new entry."
+msgstr "Оставить запись."
+
+#: frontend/gb-widget.php:407
+msgid "Select page"
+msgstr "Выберите страницу"
+
+#: frontend/gb-widget.php:404
+msgid "Select the page of the guestbook:"
+msgstr "Выберите страницу гостевой книги:"
+
+#: frontend/gb-widget.php:398
+msgid "Link text:"
+msgstr "Текст ссылки:"
+
+#: frontend/gb-widget.php:375
+msgid "Number of words for each entry:"
+msgstr "Количество слов в каждой записи:"
+
+#: frontend/gb-widget.php:365
+msgid "Show date of entry."
+msgstr "Показывать дату записи."
+
+#: frontend/gb-widget.php:359
+msgid "Show name of author."
+msgstr "Показывать имя автора."
+
+#: frontend/gb-widget.php:353
+msgid "Do not show admin entries."
+msgstr "Не показывать записи администратора."
+
+#: frontend/gb-widget.php:347
+msgid "List of entry_id's, comma-separated"
+msgstr "ID записей через запятую"
+
+#: frontend/gb-widget.php:345
+msgid "Best entries to show:"
+msgstr "Лучшие записи для показа:"
+
+#: frontend/gb-widget.php:329
+msgid "Number of entries:"
+msgstr "Количество записей:"
+
+#: frontend/gb-widget.php:323 frontend/gb-widget-search.php:99
+msgid "Title:"
+msgstr "Название:"
+
+#: frontend/gb-widget.php:85 frontend/gb-widget.php:238
+msgid "Click here to get to the guestbook."
+msgstr "Щёлкните сюда, чтобы попасть в гостевую книгу."
+
+#: frontend/gb-widget.php:38 frontend/gb-widget.php:304
+msgid "Visit guestbook"
+msgstr "Посетите гостевую книгу"
+
+#: frontend/gb-widget.php:29 frontend/gb-widget.php:295
+#: frontend/gb-shortcode-widget.php:51 frontend/gb-widget-search.php:53
+#: admin/gwolle-gb-hooks.php:41 admin/gwolle-gb-hooks.php:43
+msgid "Guestbook"
+msgstr "Гостевая книга"
+
+#: frontend/gb-widget.php:19
+msgid "Displays the recent guestbook entries."
+msgstr "Показывает последние записи в гостевой книге."
+
+#: frontend/gb-rss.php:134
+msgid "Guestbook Entry by"
+msgstr "Запись в гостевой книге от"
+
+#: frontend/gb-rss.php:37 frontend/gb-rss.php:41 frontend/gb-rss.php:119
+#: frontend/gb-rss.php:122
+msgid "Guestbook Feed"
+msgstr "Фид гостевой книги"
+
+#: frontend/gb-read.php:178
+msgid "(no entries yet)"
+msgstr "(пока нет записей)"
+
+#: frontend/gb-form-posthandling.php:476
+msgid "We will review it and unlock it in a short while."
+msgstr "Оно будет рассмотрено модератором и опубликовано, как только он одобрит."
+
+#: frontend/gb-form-posthandling.php:474
+msgid "Thank you for your entry."
+msgstr "Спасибо за Ваше сообщение."
+
+#: frontend/gb-form-posthandling.php:454
+msgid "Double post: An entry with the data you entered has already been saved."
+msgstr "Дубль: Запись с в точности такими же данными уже получена и сохранена."
+
+#: frontend/gb-form-posthandling.php:170
+msgid "The anti-spam question was not answered correctly, even though it is mandatory."
+msgstr "Вы не дали правильного ответа на антиспамовый вопрос, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:146 frontend/gb-form-posthandling.php:155
+msgid "There is no message, even though it is mandatory."
+msgstr "Вы не ввели текст сообщения, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:130 frontend/gb-form-posthandling.php:134
+msgid "Your website is not filled in, even though it is mandatory."
+msgstr "Вы не указали адрес веб-сайта, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:101 frontend/gb-form-posthandling.php:105
+msgid "Your e-mail address is not filled in correctly, even though it is mandatory."
+msgstr "Вы не указали корректный адрес e-mail, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:81 frontend/gb-form-posthandling.php:86
+msgid "Your origin is not filled in, even though it is mandatory."
+msgstr "Вы не указали, откуда Вы, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:61 frontend/gb-form-posthandling.php:66
+msgid "Your name is not filled in, even though it is mandatory."
+msgstr "Вы не указали имя, а это обязательно."
+
+#: frontend/gb-form-posthandling.php:198 functions/gb-messages.php:66
+msgid "There were errors submitting your guestbook entry."
+msgstr "При отправке записи в гостевую книгу возникли ошибки:"
+
+#: frontend/gb-form-posthandling.php:40
+msgid "Submitting a new guestbook entry is only allowed for logged-in users."
+msgstr "Отправлять записи в гостевую книгу разрешено только залогиненным пользователям."
+
+#: frontend/gb-pagination.php:100
+msgid "All entries"
+msgstr "Все записи"
+
+#: frontend/gb-pagination.php:92
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: frontend/gb-pagination.php:50 frontend/gb-pagination.php:61
+#: frontend/gb-pagination.php:76 frontend/gb-pagination.php:90
+msgid "Page"
+msgstr "Страница"
+
+#: frontend/gb-pagination.php:34
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: frontend/gwolle_gb-entry.php:187
+msgid "Admin Reply:"
+msgstr "Ответ администратора:"
+
+#. translators: on a certain date
+#: frontend/gwolle_gb-entry.php:102
+msgid "wrote on"
+msgstr "написал(а)"
+
+#. translators: city or origin
+#: frontend/gwolle_gb-entry.php:92
+msgid "from"
+msgstr "из города"
+
+#: admin/tabs/gb-uninstalltab.php:57
+msgid "Uninstall &raquo;"
+msgstr "Деинсталлировать &raquo;"
+
+#: admin/tabs/gb-uninstalltab.php:50
+msgid "Yes, I'm absolutely sure of this. Proceed!"
+msgstr "Да, я абсолютно уверен. Продолжить!"
+
+#: admin/tabs/gb-uninstalltab.php:47
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: admin/tabs/gb-uninstalltab.php:41
+msgid "This can <strong>not</strong> be undone."
+msgstr "Вернуть всё обратно будет <strong>нельзя</strong>."
+
+#: admin/tabs/gb-uninstalltab.php:39
+msgid "Uninstalling means that all database entries are removed (settings and entries)."
+msgstr "При деинсталляции все данные плагина (настройки и записи гостевой книги) будут удалены."
+
+#. translators: %s is a link to the dashboard
+#: admin/gb-page-settings.php:488
+msgid "You can now go to your %s."
+msgstr "Теперь Вы можете перейти к Вашей %s."
+
+#: admin/gb-page-settings.php:485
+msgid "The plugin is deactivated."
+msgstr "Плагин деактивирован."
+
+#: admin/gb-page-settings.php:484
+msgid "The entries and settings have been removed."
+msgstr "Записи и настройки были удалены."
+
+#: admin/tabs/gb-readingtab.php:274
+msgid "A link to the editor will be added to the metabox. Only visible for moderators."
+msgstr "В сообщении будет присутствовать ссылка на редактирование. Видна только модераторам."
+
+#: admin/tabs/gb-readingtab.php:266
+msgid "Edit link"
+msgstr "Ссылка на редактирование"
+
+#: functions/gb-privacy.php:94 admin/tabs/gb-readingtab.php:242
+msgid "Content"
+msgstr "Текст записи"
+
+#: admin/tabs/gb-readingtab.php:237
+msgid "Setting this will show the date of the entry. If Date and Time above are enabled, that setting has preference."
+msgstr "Данная опция будет показывать дату, когда сделана запись. Если включена опция «Дата и время», последняя будет иметь приоритет."
+
+#: admin/tabs/gb-readingtab.php:224
+msgid "Setting this will show the date and the time of the entry."
+msgstr "Данная опция будет показывать дату и время, когда сделана запись."
+
+#: admin/tabs/gb-readingtab.php:216
+msgid "Date and Time"
+msgstr "Дата и время"
+
+#: admin/tabs/gb-readingtab.php:180
+msgid "Avatar"
+msgstr "Аватар"
+
+#: admin/tabs/gb-readingtab.php:176
+msgid "Configure the parts of the entries that are shown to visitors."
+msgstr "Сконфигурировать, какие элементы записей будут показываться посетителям."
+
+#: admin/tabs/gb-readingtab.php:168
+msgid "Clicking this link will list all the published entries in the guestbook."
+msgstr "Нажатие на эту ссылку отобразит все записи в гостевой книге."
+
+#: admin/tabs/gb-readingtab.php:149 admin/tabs/gb-readingtab.php:159
+msgid "Pagination"
+msgstr "Разбиение на страницы"
+
+#: admin/tabs/gb-readingtab.php:140
+msgid "Admin entries get a special CSS styling. It will get a lightgrey background."
+msgstr "Записи администратора получают особый стиль CSS. У него будет светло-серый фон."
+
+#: admin/tabs/gb-readingtab.php:138
+msgid "Admin entries get a special CSS styling."
+msgstr "Записи администратора получают свой собственный стиль CSS."
+
+#: admin/tabs/gb-readingtab.php:131
+msgid "Admin Entry Styling"
+msgstr "Стиль администраторских записей"
+
+#: admin/tabs/gb-readingtab.php:126
+msgid "The author of an entry can set his/her website. If this setting is checked, his/her name will be a link to that website."
+msgstr "Автор записи может указать свой веб-сайт. Если данная опция включена, имя автора будет являться ссылкой на указанный сайт."
+
+#: admin/tabs/gb-readingtab.php:124
+msgid "Link authors' name to their website."
+msgstr "Вставлять в имя автора ссылку на его веб-сайт."
+
+#: admin/tabs/gb-readingtab.php:117
+msgid "Links"
+msgstr "Ссылки"
+
+#. translators: %s is a smiley image
+#: admin/tabs/gb-readingtab.php:112
+msgid "Replaces smileys in entries like :) with their image %s. Uses the WP smiley replacer, so check on that one if you'd like to add new/more smileys."
+msgstr "Заменяет смайлики в записях, такие как :), на картинку %s. Использует вордпрессовский заменитель смайликов, поэтому если хотите поменять смайлики или добавить новые, делайте это там."
+
+#: admin/tabs/gb-readingtab.php:109
+msgid "Display smileys as images."
+msgstr "Отображать смайлики как картинки."
+
+#: admin/tabs/gb-readingtab.php:102
+msgid "Smileys"
+msgstr "Смайлики"
+
+#: admin/tabs/gb-readingtab.php:96
+msgid "This can only be enabled if the Excerpt Length above is set to Unlimited Words."
+msgstr "Это можно включить только если длина отрывка (см. настройку выше) установлена в неограниченное количество слов."
+
+#: admin/tabs/gb-readingtab.php:95
+msgid "Show line breaks as the entry authors entered them. (May result in very long entries. Is turned off by default.)"
+msgstr "Показывать переводы на новую строку, когда автор записи их ввёл. (Может приводить к очень длинным записям. По умолчанию выключено.)"
+
+#: admin/tabs/gb-readingtab.php:92
+msgid "Show line breaks."
+msgstr "Показывать переводы на новую строку."
+
+#: admin/tabs/gb-readingtab.php:85
+msgid "Line breaks"
+msgstr "Переводы на новую строку"
+
+#: admin/tabs/gb-readingtab.php:79
+msgid "Please be aware that this will strip linebreaks as well."
+msgstr "Пожалуйста, имейте в виду, что переходы на новые строки будут убраны."
+
+#: admin/tabs/gb-readingtab.php:78
+msgid "Maximum length of the entry content in words."
+msgstr "Максимальное количество слов записи в гостевой книге, которое будет отображаться для посетителей."
+
+#: admin/tabs/gb-readingtab.php:72
+msgid "Words"
+msgstr "Слов"
+
+#: admin/tabs/gb-readingtab.php:65
+msgid "Unlimited Words"
+msgstr "Неограниченное количество слов"
+
+#: admin/tabs/gb-readingtab.php:55
+msgid "Length of the entry content"
+msgstr "Длина показываемой записи"
+
+#: admin/tabs/gb-readingtab.php:50
+msgid "Number of entries shown on the frontend."
+msgstr "Количество записей, отображаемых на странице."
+
+#: admin/tabs/gb-readingtab.php:35
+msgid "Entries per page on the frontend"
+msgstr "Записей на странице"
+
+#: admin/tabs/gb-formtab.php:279 admin/tabs/gb-formtab.php:294
+msgid "When enabled it is mandatory."
+msgstr "Когда включено, это обязательно."
+
+#: admin/tabs/gb-formtab.php:269
+msgid "Custom Anti-spam"
+msgstr "Пользовательский анти-спам"
+
+#: admin/tabs/gb-formtab.php:264
+msgid "Will only be shown if the Message is enabled."
+msgstr "Будет показано только если включён «Текст сообщения»."
+
+#: admin/tabs/gb-formtab.php:254
+msgid "BBcode and Emoji"
+msgstr "bbCode и эмодзи"
+
+#: frontend/gb-form.php:224 functions/gb-privacy.php:88
+#: admin/tabs/gb-formtab.php:194 admin/gb-page-editor.php:374
+msgid "Email"
+msgstr "E-mail"
+
+#: admin/tabs/gb-formtab.php:169 admin/tabs/gb-formtab.php:189
+#: admin/tabs/gb-formtab.php:209 admin/tabs/gb-formtab.php:229
+#: admin/tabs/gb-formtab.php:249
+msgid "Mandatory"
+msgstr "Обязательно"
+
+#: admin/tabs/gb-readingtab.php:187 admin/tabs/gb-readingtab.php:199
+#: admin/tabs/gb-readingtab.php:211 admin/tabs/gb-readingtab.php:223
+#: admin/tabs/gb-readingtab.php:236 admin/tabs/gb-readingtab.php:249
+#: admin/tabs/gb-readingtab.php:261 admin/tabs/gb-readingtab.php:273
+#: admin/tabs/gb-formtab.php:161 admin/tabs/gb-formtab.php:181
+#: admin/tabs/gb-formtab.php:201 admin/tabs/gb-formtab.php:221
+#: admin/tabs/gb-formtab.php:241 admin/tabs/gb-formtab.php:261
+#: admin/tabs/gb-formtab.php:276 admin/tabs/gb-formtab.php:291
+msgid "Enabled"
+msgstr "Включить"
+
+#: admin/tabs/gb-formtab.php:150
+msgid "Configure the form that is shown to visitors."
+msgstr "Сконфигурировать форму ввода, которая будет показываться посетителям."
+
+#: admin/tabs/gb-formtab.php:97
+msgid "If you use a Multi-Lingual plugin, keep the 2 fields for header and notice empty when saving. That way the default text will be shown from a translated PO file."
+msgstr "Если Вы используете плагин Multi-Lingual, при сохранении оставляйте два поля заголовка и примечания пустыми. Тогда будет отображаться текст по умолчанию из переведённого PO-файла."
+
+#: admin/tabs/gb-formtab.php:95
+msgid "You can use the tag %ip% to show the ip address."
+msgstr "Возможно использование тэга %ip%, который будет показывать IP-адрес."
+
+#: admin/tabs/gb-formtab.php:93
+msgid "You can set the content of the notice that gets shown below the form."
+msgstr "Вы можете задать текст, который отображается под формой ввода."
+
+#: frontend/gb-form.php:444 admin/tabs/gb-formtab.php:82
+msgid ""
+"\n"
+"Fields marked with * are required.\n"
+"Your E-mail address won't be published.\n"
+"It's possible that your entry will only be visible in the guestbook after we reviewed it.\n"
+"We reserve the right to edit, delete, or not publish entries.\n"
+msgstr ""
+"\n"
+"Поля, помеченные звёздочкой, обязательны для заполнения.\n"
+"Ваш адрес e-mail опубликован не будет.\n"
+"Ваша запись в гостевой книге может быть показана не сразу, а только после предварительной проверки администрацией сайта.\n"
+"Мы оставляем за собой право редактировать, удалять или не публиковать записи в гостевой книге.\n"
+
+#: admin/tabs/gb-formtab.php:77
+msgid "Notice Text"
+msgstr "Текст примечания"
+
+#: admin/tabs/gb-formtab.php:71
+msgid "You can set the header that is shown on top of the form."
+msgstr "Вы можете установить заголовок, который показывается вверху формы."
+
+#: frontend/gb-form.php:147 admin/tabs/gb-formtab.php:66
+msgid "Write a new entry for the Guestbook"
+msgstr "<HR>Оставить новую запись в гостевой книге</BR></BR>"
+
+#: admin/tabs/gb-formtab.php:62
+msgid "Header Text"
+msgstr "Текст заголовка"
+
+#: admin/tabs/gb-formtab.php:57
+msgid "Labels in the form float to the left. Otherwise the labels will be above the input-fields."
+msgstr "Подписи к полям ввода расположены слева от них. Иначе они будут располагаться над ними."
+
+#: admin/tabs/gb-formtab.php:55
+msgid "Labels in the form float to the left."
+msgstr "Подписи к полям ввода расположены слева."
+
+#: admin/tabs/gb-formtab.php:48
+msgid "Labels float"
+msgstr "Расположение подписей к полям"
+
+#: admin/tabs/gb-formtab.php:43
+msgid "Only allow logged-in users to add a guestbook entry."
+msgstr "Разрешить оставлять записи в гостевой книге только тем пользователям, которые вошли в систему."
+
+#: admin/tabs/gb-formtab.php:41
+msgid "Require user to be logged in."
+msgstr "Потребовать, чтобы пользователь был залогинен."
+
+#: admin/tabs/gb-formtab.php:34
+msgid "Require Login"
+msgstr "Требовать вход"
+
+#: admin/tabs/gb-emailtab.php:262
+msgid "You can set the content of the mail that the author of the entry will receive when an Admin Reply is added. The following tags are supported:"
+msgstr "Вы можете задать текст письма, которое будет отправлено автору записи, когда администратор добавит к ней ответ. Поддерживаются следующие тэги:"
+
+#: admin/tabs/gb-emailtab.php:235
+msgid "Admin Reply mail content"
+msgstr "Содержание письма об ответе администратора"
+
+#: admin/tabs/gb-emailtab.php:220
+msgid "You can set the content of the mail that the author of the entry will receive. The following tags are supported:"
+msgstr "Вы можете задать текст письма, которое получит автор записи. Поддерживаются следующие тэги:"
+
+#: functions/gb-mail.php:158 admin/tabs/gb-emailtab.php:200
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"You have just posted a new guestbook entry at '%blog_name%'.\n"
+"\n"
+"Have a nice day.\n"
+"The editors at %blog_name%.\n"
+"\n"
+"\n"
+"Website address: %blog_url%\n"
+"User name: %user_name%\n"
+"User email: %user_email%\n"
+"Entry content:\n"
+"%entry_content%\n"
+msgstr ""
+"\n"
+"Здравствуйте,\n"
+"\n"
+"Вы только что оставили запись в гостевой книге на сайте «%blog_name%».\n"
+"\n"
+"Хорошего Вам дня.\n"
+"Редакторы сайта «%blog_name%».\n"
+"\n"
+"\n"
+"Адрес сайта: %blog_url%\n"
+"Имя пользователя: %user_name%\n"
+"E-mail пользователя: %user_email%\n"
+"Текст записи:\n"
+"%entry_content%\n"
+
+#: admin/tabs/gb-emailtab.php:195
+msgid "Author mail content"
+msgstr "Текст письма автору"
+
+#: admin/tabs/gb-emailtab.php:189
+msgid "The author of the guestbook entry will receive an email after posting. It will have a copy of the entry."
+msgstr "После отправки записи в гостевую книгу автор этой записи получит электронное письмо. В нём будет копия записи."
+
+#: admin/tabs/gb-emailtab.php:185
+msgid "Mail the author with a confirmation email."
+msgstr "Отправить автору письмо с подтверждением."
+
+#: admin/tabs/gb-emailtab.php:177
+msgid "Mail Author"
+msgstr "Написать автору электронное письмо"
+
+#: admin/tabs/gb-emailtab.php:162
+msgid "You can set the content of the mail that a notification subscriber gets on new entries. The following tags are supported:"
+msgstr "Вы можете установить содержимое писем, которые лицо, подписавшееся на уведомления, будет получать при появлении новых записей в гостевой книге. Поддерживаются следующие тэги:"
+
+#: functions/gb-mail.php:45 admin/tabs/gb-emailtab.php:140
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"There is a new guestbook entry at '%blog_name%'.\n"
+"You can check it at %entry_management_url%.\n"
+"\n"
+"Have a nice day.\n"
+"Your Gwolle-GB-Mailer\n"
+"\n"
+"\n"
+"Website address: %blog_url%\n"
+"User name: %user_name%\n"
+"User email: %user_email%\n"
+"Entry status: %status%\n"
+"Entry content:\n"
+"%entry_content%\n"
+msgstr ""
+"\n"
+"Здравствуйте,\n"
+"\n"
+"В гостевой книге блога «%blog_name%» появилась новая запись.\n"
+"Вы можете проверить её по данной ссылке: %entry_management_url%.\n"
+"\n"
+"Хорошего Вам дня!\n"
+"Ваш Gwolle-GB-Mailer\n"
+"\n"
+"\n"
+"Адрес веб-сайта: %blog_url%\n"
+"Имя пользователя: %user_name%\n"
+"E-mail пользователя: %user_email%\n"
+"Статус записи: %status%\n"
+"Текст записи:\n"
+"%entry_content%\n"
+
+#: admin/tabs/gb-emailtab.php:135
+msgid "Admin mail content"
+msgstr "Содержимое писем администратору"
+
+#: admin/tabs/gb-emailtab.php:80
+msgid "You will only see users with the roles of Administrator, Editor and Author, who have the capability 'moderate_comments' ."
+msgstr "Вы увидите только пользователей с ролями «Администратор», «Редактор» и «Автор». Только у этих ролей могут быть полномочия модерировать комментарии."
+
+#: admin/tabs/gb-emailtab.php:79
+msgid "Select a user that you want subscribed to the notification emails."
+msgstr "Выберите пользователя, которого хотите подписать на уведомления по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:78
+msgid "You can subscribe a moderator to the notification emails."
+msgstr "Вы можете подписать модератора на получение уведомлений по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:56
+msgid "Subscribe User"
+msgstr "Подписать пользователя"
+
+#: admin/tabs/gb-emailtab.php:53
+msgid "Subscribe moderators"
+msgstr "Подписать модераторов"
+
+#: admin/tabs/gb-emailtab.php:115
+msgid "Select a user if you want that user to unsubscribe from the notification emails."
+msgstr "Выберите пользователя, если хотите отписать его от оповещений по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:114
+msgid "These users have subscribed to the notification emails."
+msgstr "Эти пользователи подписались на оповещения по электронной почте."
+
+#: admin/tabs/gb-emailtab.php:96
+msgid "Unsubscribe User"
+msgstr "Отписать пользователя"
+
+#: admin/tabs/gb-emailtab.php:86
+msgid "Unsubscribe moderators"
+msgstr "Отписать модераторов"
+
+#: admin/tabs/gb-emailtab.php:128
+msgid "By default the main admin address is used from General > Settings."
+msgstr "По умолчанию используется основной адрес администратора из «Параметры» >> «Общие»."
+
+#: admin/tabs/gb-emailtab.php:126
+msgid "You can set the email address that is used for the From header of the mail that a notification subscriber gets on new entries."
+msgstr "Вы можете установить адрес e-mail, который будет использован в поле «от кого» в письмах, которые будет получать лицо, подписавшееся на уведомления."
+
+#: admin/tabs/gb-antispamtab.php:247
+msgid "You can ask your visitors to answer a custom security question, so only real people can post an entry."
+msgstr "Вы можете потребовать, чтобы пользователи отвечали на антиспамовый вопрос, так что сообщения смогут отправлять только люди."
+
+#: admin/tabs/gb-antispamtab.php:245
+msgid "The answer to your security question:"
+msgstr "Ответ на Ваш антиспамовый вопрос:"
+
+#: admin/tabs/gb-antispamtab.php:246
+msgid "18"
+msgstr "18"
+
+#: admin/tabs/gb-antispamtab.php:243
+msgid "Custom security question to battle spam:"
+msgstr "Предустановленный вопрос, чтобы не пропускать спам:"
+
+#: admin/tabs/gb-antispamtab.php:244
+msgid "12 + six ="
+msgstr "12 + шесть ="
+
+#: admin/tabs/gb-antispamtab.php:240
+msgid "Custom Anti-Spam Security Question"
+msgstr "Пользовательский антиспамовый вопрос"
+
+#: admin/tabs/gb-antispamtab.php:206
+msgid "The WordPress API key has been found, so you can start using Akismet right now."
+msgstr "Ключ API Вашего Вордпресса был найден, так что Вы можете начать использовать Akismet прямо сейчас."
+
+#: admin/tabs/gb-antispamtab.php:203
+msgid "Use Akismet"
+msgstr "Использовать Akismet"
+
+#: admin/tabs/gb-antispamtab.php:190
+msgid "Akismet helps you to fight spam. It's free and easy to install. Download and install it today to stop spam in your guestbook."
+msgstr "Akismet помогает бороться со спамом. Он бесплатный и его легко установить. Скачайте и установите его прямо сегодня, чтобы не допустить спам в своей гостевой книге."
+
+#: admin/tabs/gb-antispamtab.php:179
+msgid "Learn more about Akismet..."
+msgstr "Узнать про Akismet больше..."
+
+#: admin/tabs/gb-antispamtab.php:47
+msgid "It is recommended that you turn this on, because you are responsible for the content on your website."
+msgstr "Рекомендуется данную опцию включить, поскольку за контент на сайте ответственность несёте Вы."
+
+#: admin/tabs/gb-antispamtab.php:45
+msgid "New entries have to be unlocked by a moderator before they are visible to the public."
+msgstr "Новые записи вначале должны быть разблокированы администратором и только тогда становятся видны всем."
+
+#: admin/tabs/gb-antispamtab.php:42
+msgid "Moderate entries before publishing them."
+msgstr "Записи будут проходить предварительную модерацию."
+
+#. translators: Settings page, option for moderation
+#: admin/tabs/gb-antispamtab.php:34
+msgid "Moderate Guestbook"
+msgstr "Модерация гостевой книги"
+
+#: admin/tabs/gb-admintab.php:69 admin/tabs/gb-antispamtab.php:255
+#: admin/tabs/gb-readingtab.php:281 admin/tabs/gb-emailtab.php:279
+#: admin/tabs/gb-formtab.php:301
+msgid "Save settings"
+msgstr "Сохранить настройки"
+
+#: admin/tabs/gb-admintab.php:62
+msgid "These icons are shown in every entry row of the admin list, so that you know its status (checked, spam and trash)."
+msgstr "Эти иконки отображаются в области администрирования для каждой записи, так что сразу видно её статус (проверена, спам, в урне)."
+
+#: admin/tabs/gb-admintab.php:60
+msgid "Show entry icons"
+msgstr "Показывать иконки записей"
+
+#: admin/tabs/gb-admintab.php:54
+msgid "Entry icons"
+msgstr "Иконки записей"
+
+#: admin/tabs/gb-admintab.php:49
+msgid "Number of entries shown in the admin."
+msgstr "Количество записей, отображаемых в области администрирования."
+
+#: admin/tabs/gb-admintab.php:44 admin/tabs/gb-readingtab.php:45
+#: admin/gwolle-gb-hooks.php:52 admin/gwolle-gb-hooks.php:55
+msgid "Entries"
+msgstr "Записи"
+
+#: admin/tabs/gb-admintab.php:34
+msgid "Entries per page in the admin"
+msgstr "Записей на странице в администраторской области"
+
+#: admin/gb-pagination.php:49
+msgid "of"
+msgstr "из"
+
+#: admin/gb-page-entries.php:292 admin/gb-pagination.php:48
+msgid "Showing:"
+msgstr "Показано:"
+
+#. translators: Settings page tab
+#: admin/tabs/gb-uninstalltab.php:37 admin/gb-page-settings.php:64
+msgid "Uninstall"
+msgstr "Деинсталляция"
+
+#. translators: Settings page tab
+#: frontend/gb-form.php:360 admin/gb-page-settings.php:60
+msgid "Anti-spam"
+msgstr "Анти-спам"
+
+#. translators: Settings page tab
+#: admin/gb-page-settings.php:59
+msgid "Admin"
+msgstr "Администратор"
+
+#. translators: Settings page tab
+#: admin/gb-page-settings.php:58
+msgid "Reading"
+msgstr "Чтение"
+
+#. translators: Settings page tab
+#: admin/gb-page-settings.php:57
+msgid "Form"
+msgstr "Форма отправки"
+
+#. translators: Menu entry
+#: admin/gb-page-settings.php:37 admin/gwolle-gb-hooks.php:66
+#: admin/gwolle-gb-hooks.php:101
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/gb-page-import.php:285
+msgid "Select a CSV file with exported entries to import again:"
+msgstr "Выберите файл CSV с экспортированными записями, чтобы их импортировать:"
+
+#: admin/gb-page-import.php:57
+msgid "Import guestbook entries from Gwolle-GB"
+msgstr "Импортировать записи гостевой книги из Gwolle-GB"
+
+#: admin/gb-page-import.php:259
+msgid "All Comments"
+msgstr "Все комментарии"
+
+#: admin/gb-page-import.php:258
+msgid "Comments from selected post."
+msgstr "Комментарии к выбранной записи."
+
+#: admin/gb-page-import.php:257
+msgid "Comments from selected page."
+msgstr "Комментарии с выбранной страницы."
+
+#: admin/gb-page-import.php:256
+msgid "Select where to import the comments from:"
+msgstr "Выберите, откуда будут импортированы комментарии:"
+
+#: admin/gb-page-import.php:212
+msgid "Select a post to import the comments from:"
+msgstr "Выберите запись, из которой надо импортировать комментарии:"
+
+#: admin/gb-page-import.php:176 admin/gb-page-import.php:214
+msgid "Select"
+msgstr "Выбрать"
+
+#: admin/gb-page-import.php:174
+msgid "Select a page to import the comments from:"
+msgstr "Выберите страницу, с которой нужно импортировать комментарии:"
+
+#: admin/gb-page-import.php:169
+msgid "Spam comments will not be imported."
+msgstr "Спамовые комментарии импортированы не будут."
+
+#: admin/gb-page-import.php:165
+msgid "\"approved\" status"
+msgstr "статус «одобрено»"
+
+#: admin/gb-page-import.php:159 admin/gb-page-export.php:255
+#: admin/gb-page-export.php:256 admin/gb-page-entries.php:235
+#: admin/gb-page-entries.php:236
+msgid "User ID"
+msgstr "ID пользователя"
+
+#: admin/gb-page-import.php:56
+msgid "Import guestbook entries from WordPress comments"
+msgstr "Импортировать записи гостевой книги из комментариев WordPress"
+
+#: admin/gb-page-import.php:134
+msgid "DMSGuestbook was not found."
+msgstr "DMSGuestbook не обнаружена."
+
+#: admin/gb-page-import.php:131 admin/gb-page-import.php:263
+#: admin/gb-page-import.php:290
+msgid "Start import"
+msgstr "Начать импортирование"
+
+#: admin/gb-page-import.php:127
+msgid "Import all entries from DMSGuestbook."
+msgstr "Импортировать все записи из DMSGuestbook."
+
+#: admin/gb-page-import.php:121 admin/gb-page-import.php:171
+msgid "The importer does not delete any data, so you can go back whenever you want."
+msgstr "Импортировщик не удаляет никакие данные, так что Вы в любой момент сможете вернуться обратно."
+
+#. translators: %s is for bold text
+#: admin/gb-page-import.php:119 admin/gb-page-import.php:167
+msgid "However, data such as HTML formatting is not supported by Gwolle-GB and %swill not%s be imported."
+msgstr "Однако такие данные как форматирование HTML не поддерживаются плагином Gwolle-GB и %sне будут%s импортированы."
+
+#: admin/gb-page-import.php:108 admin/gb-page-import.php:156
+msgid "The importer will preserve the following data per entry:"
+msgstr "Импортировщик сохранит следующие данные для каждой записи:"
+
+#. translators: %s is the number of entries
+#: admin/gb-page-import.php:105
+msgid "%s entry was found and will be imported."
+msgid_plural " %s entries were found and will be imported."
+msgstr[0] "%s запись была найдена и будет импортирована."
+msgstr[1] "%s записи было найдено и будет импортировано."
+msgstr[2] "%s записей было найдено и будет импортировано."
+
+#: admin/gb-page-import.php:55
+msgid "Import guestbook entries from DMSGuestbook"
+msgstr "Импортировать записи из DMSGuestbook"
+
+#: admin/gb-page-import.php:35
+msgid "Import guestbook entries."
+msgstr "Импортировать записи в гостевую книгу."
+
+#: admin/gb-page-import.php:663
+msgid "Your upload triggered the following error:"
+msgstr "При загрузке возникла следующая ошибка:"
+
+#. translators: %s is the number of entries
+#: admin/gb-page-import.php:655
+msgid "%s entry imported successfully from the CSV file."
+msgid_plural "%s entries imported successfully from the CSV file."
+msgstr[0] "%s запись успешно импортирована из файла CSV."
+msgstr[1] "%s записи успешно импортировано из файла CSV."
+msgstr[2] "%s записей успешно импортировано из файла CSV."
+
+#: admin/gb-page-import.php:651
+msgid "I'm sorry, but I wasn't able to import entries from the CSV file."
+msgstr "К сожалению, импортировать записи из файла CSV не удалось."
+
+#: admin/gb-page-import.php:591
+msgid "Your data seems to be corrupt. Import failed."
+msgstr "Похоже, Ваши данные повреждены. Импортирование не удалось."
+
+#: admin/gb-page-import.php:583
+msgid "It seems your CSV file is from an export that is not compatible with this version of Gwolle-GB."
+msgstr "Похоже, Ваш файл CSV получился путём экспорта, не совместимого с данной версией Gwolle-GB."
+
+#: admin/gb-page-import.php:492
+msgid "Your file is too large."
+msgstr "Размер Вашего файла слишком велик."
+
+#. translators: %s is for bold text
+#: admin/gb-page-import.php:466
+msgid "%sNothing to import.%s There seem to be no comments on this page, post or at all."
+msgstr "%sНечего импортировать.%s Похоже, комментариев на этой странице/ к этому посту/ вообще всех нет ни одного."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-import.php:462
+msgid "%s entry imported successfully from WordPress comments."
+msgid_plural "%s entries imported successfully from WordPress comments."
+msgstr[0] "%s запись была успешно импортирована из комментариев WordPress."
+msgstr[1] "%s записи было успешно импортировано из комментариев WordPress."
+msgstr[2] "%s записей было успешно импортировано из комментариев WordPress."
+
+#: admin/gb-page-import.php:458
+msgid "I'm sorry, but I wasn't able to import comments from that page successfully."
+msgstr "К сожалению, комментарии с этой страницы импортировать не удалось."
+
+#: admin/gb-page-import.php:424
+msgid "You haven't chosen how to import from WordPress comments. Please choose and try again."
+msgstr "Вы не выбрали, как импортировать из комментариев ВордПресс. Пожалуйста, выберите, и попробуйте ещё раз."
+
+#: admin/gb-page-import.php:389
+msgid "I'm sorry, but I wasn't able to find the MySQL table of DMSGuestbook."
+msgstr "К сожалению, не удалось найти таблицу MySQL от DMSGuestbook."
+
+#. translators: %s is for bold text
+#: admin/gb-page-import.php:386
+msgid "%sNothing to import.%s The guestbook you've chosen does not contain any entries."
+msgstr "%sНечего импортировать.%s В гостевой книге, которую Вы выбрали, нет ни одной записи."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-import.php:382
+msgid "%s entry imported successfully from DMSGuestbook."
+msgid_plural "%s entries imported successfully from DMSGuestbook."
+msgstr[0] "%s запись успешно импортирована из DMSGuestbook."
+msgstr[1] "%s записи успешно импортировано из DMSGuestbook."
+msgstr[2] "%s записей успешно импортировано из DMSGuestbook."
+
+#: admin/gb-page-import.php:378
+msgid "I'm sorry, but I wasn't able to import entries from DMSGuestbook successfully."
+msgstr "К сожалению, импортировать записи из DMSGuestbook не удалось."
+
+#. Plugin Name of the plugin
+#: frontend/gb-widget.php:20 functions/gb-privacy.php:62
+#: functions/gb-privacy.php:218 admin/gb-page-gwolle-gb.php:40
+msgid "Gwolle Guestbook"
+msgstr "Гостевая книга Gwolle"
+
+#: admin/gb-page-gwolle-gb.php:259
+msgid "This plugin uses the following scripts and services:"
+msgstr "Плагин использует следующие скрипты и сервисы:"
+
+#: admin/gb-page-gwolle-gb.php:33
+msgid "Help"
+msgstr "Помощь"
+
+#: admin/gb-page-gwolle-gb.php:30
+msgid "E-mail Notifications"
+msgstr "Оповещения по e-mail"
+
+#: admin/gb-page-gwolle-gb.php:28
+msgid "Welcome to the Guestbook!"
+msgstr "Добро пожаловать в гостевую книгу!"
+
+#: admin/gb-page-gwolle-gb.php:292
+msgid "Not marked as Trash."
+msgstr "Не помечены как находящиеся в урне."
+
+#: admin/gb-page-gwolle-gb.php:291
+msgid "Not marked as Spam."
+msgstr "Не помечены как спам."
+
+#: admin/gb-page-gwolle-gb.php:290
+msgid "Marked as Checked."
+msgstr "Помечены как проверенные."
+
+#: admin/gb-page-gwolle-gb.php:288
+msgid "These entries will be visible for your visitors:"
+msgstr "Эти записи будут видны для Ваших посетителей:"
+
+#: admin/gb-page-gwolle-gb.php:277
+msgid "Choose a title and set &quot;[gwolle_gb]&quot; (without the quotes) as the content."
+msgstr "Выберите название и в качестве её содержимого установите «[gwolle_gb]» (без кавычек)."
+
+#: admin/gb-page-gwolle-gb.php:276
+msgid "Create a new page."
+msgstr "Создайте новую страницу."
+
+#: admin/gb-page-gwolle-gb.php:274
+msgid "This is how you can get your guestbook displayed on your website:"
+msgstr "Чтобы гостевая книга отображалась на Вашем сайте:"
+
+#: admin/gb-page-gwolle-gb.php:331
+msgid "Review this plugin."
+msgstr "Написать отзыв об этом плагине."
+
+#: admin/gb-page-gwolle-gb.php:246
+msgid "No subscriber yet"
+msgstr "Пока нет подписчиков"
+
+#: functions/gb-log.php:199 functions/gb-log.php:210
+#: admin/tabs/gb-emailtab.php:72 admin/tabs/gb-emailtab.php:108
+#: admin/gb-page-gwolle-gb.php:237
+msgid "You"
+msgstr "Вы"
+
+#: admin/gb-page-gwolle-gb.php:225
+msgid "The following users have subscribed to this service:"
+msgstr "Следующие пользователи подписаны на данный сервис:"
+
+#: admin/gb-page-gwolle-gb.php:221
+msgid "Save setting"
+msgstr "Сохранить настройки"
+
+#: admin/gb-page-gwolle-gb.php:219
+msgid "Send me an e-mail when a new entry has been posted."
+msgstr "Присылать мне e-mail, когда опубликовали новую запись."
+
+#: admin/tabs/gb-emailtab.php:92
+msgid "Sorry, but the function <code>mail()</code> required to notify you by mail is not enabled in your PHP configuration. You might want to install a WordPress plugin that uses SMTP instead of <code>mail()</code>. Or you can contact your hosting provider to change this."
+msgstr "К сожалению, функция <code>mail()</code>, необходимая для того чтобы оповещать Вас по e-mail, не включена в Вашей конфигурации PHP. Вы могли бы установить плагин WordPress, который использует SMTP, а не <code>mail()</code>. Или Вы можете связаться с Вашим хостинг-провайдером, чтобы поменять текущее положение дел."
+
+#: admin/gb-page-gwolle-gb.php:163
+msgid "Write admin entry"
+msgstr "Написать запись администратора"
+
+#: admin/gb-page-gwolle-gb.php:146
+msgid "Trashed entry"
+msgid_plural "Trashed entries"
+msgstr[0] "Запись в урне"
+msgstr[1] "Записи в урне"
+msgstr[2] "Записей в урне"
+
+#: admin/gb-page-gwolle-gb.php:136
+msgid "Spam entry"
+msgid_plural "Spam entries"
+msgstr[0] "Спамовая запись"
+msgstr[1] "Спамовых записи"
+msgstr[2] "Спамовых записей"
+
+#: admin/gb-page-gwolle-gb.php:126
+msgid "New entry"
+msgid_plural "New entries"
+msgstr[0] "Новая запись"
+msgstr[1] "Новых записи"
+msgstr[2] "Новых записей"
+
+#: admin/gb-page-gwolle-gb.php:116
+msgid "Unlocked entry"
+msgid_plural "Unlocked entries"
+msgstr[0] "Разблокированная запись"
+msgstr[1] "Разблокированных записи"
+msgstr[2] "Разблокированных записей"
+
+#: admin/gb-page-gwolle-gb.php:106
+msgid "Entry total"
+msgid_plural "Entries total"
+msgstr[0] "Запись всего"
+msgstr[1] "Записи всего"
+msgstr[2] "Записей всего"
+
+#: admin/gb-page-gwolle-gb.php:95
+msgid "Overview"
+msgstr "Общие сведения"
+
+#: admin/gb-page-export.php:102 admin/gb-page-export.php:269
+msgid "Start export"
+msgstr "Начать экспорт"
+
+#: admin/gb-page-export.php:98
+msgid "Export all entries from this website."
+msgstr "Экспортировать записи с этого веб-сайта."
+
+#: admin/gb-page-export.php:93
+msgid "The exporter does not delete any data, so your data will still be here."
+msgstr "Экспортировщик ничего не удаляет, так что все Ваши данные останутся в гостевой книге."
+
+#: admin/gb-page-export.php:88
+msgid "\"is trash\" flag"
+msgstr "флажок «в урне»"
+
+#: admin/gb-page-import.php:116 admin/gb-page-export.php:87
+msgid "\"is spam\" flag"
+msgstr "флажок «спам»"
+
+#: admin/gb-page-import.php:117 admin/gb-page-export.php:86
+msgid "\"is checked\" flag"
+msgstr "флажок «проверено»"
+
+#: functions/gb-privacy.php:92 admin/gb-page-export.php:84
+msgid "Host address"
+msgstr "Адрес хоста"
+
+#: functions/gb-privacy.php:91 admin/gb-page-import.php:114
+#: admin/gb-page-import.php:163 admin/gb-page-export.php:83
+msgid "IP address"
+msgstr "IP-адрес"
+
+#: functions/gb-privacy.php:93 admin/gb-page-import.php:113
+#: admin/gb-page-import.php:162 admin/gb-page-export.php:82
+msgid "Date of the entry"
+msgstr "Дата записи"
+
+#: admin/gb-page-import.php:112 admin/gb-page-import.php:161
+#: admin/gb-page-export.php:80
+msgid "URL/Website"
+msgstr "URL/Веб-сайт"
+
+#: admin/gb-page-import.php:111 admin/gb-page-import.php:160
+#: admin/gb-page-export.php:79
+msgid "E-Mail address"
+msgstr "Адрес e-mail"
+
+#: frontend/gb-form.php:171 admin/gb-page-import.php:110
+#: admin/gb-page-import.php:158 admin/tabs/gb-readingtab.php:192
+#: admin/tabs/gb-formtab.php:154 admin/gb-page-export.php:78
+msgid "Name"
+msgstr "Имя"
+
+#: admin/gb-page-export.php:75
+msgid "The exporter will preserve the following data per entry:"
+msgstr "Экспортировщик сохранит следующие данные для каждой записи:"
+
+#. translators: %s is the number of entries
+#: admin/gb-page-export.php:70
+msgid "%s entry was found and will be exported."
+msgid_plural "%s entries were found and will be exported."
+msgstr[0] "%s запись была найдена и будет экспортирована."
+msgstr[1] "%s записи было найдено и будет экспортировано."
+msgstr[2] "%s записей было найдено и будет экспортировано."
+
+#: admin/gb-page-export.php:66 admin/gb-page-export.php:250
+msgid "No entries were found."
+msgstr "Записей не обнаружено."
+
+#: admin/gb-page-export.php:36
+msgid "Export guestbook entries from Gwolle-GB"
+msgstr "Экспортировать записи из Gwolle-GB"
+
+#: admin/gb-page-export.php:31
+msgid "Export guestbook entries."
+msgstr "Экспортировать записи из гостевой книги."
+
+#: admin/gb-page-entries.php:349
+msgid "No entries found."
+msgstr "Не найдено ни одной записи."
+
+#: admin/gb-page-entries.php:317 admin/gb-page-entries.php:334
+msgid "Action"
+msgstr "Действие"
+
+#: admin/gb-page-entries.php:316 admin/gb-page-entries.php:333
+msgid "Entry (excerpt)"
+msgstr "Запись (отрывок)"
+
+#: admin/tabs/gb-readingtab.php:229 admin/gb-page-entries.php:314
+#: admin/gb-page-entries.php:331
+msgid "Date"
+msgstr "Дата"
+
+#: admin/gb-page-entries.php:308 admin/gb-page-entries.php:325
+msgid "ID"
+msgstr "ID"
+
+#: admin/gb-page-entries.php:280 admin/gb-page-entries.php:507
+msgid "Empty Trash"
+msgstr "Очистить урну"
+
+#: admin/gb-page-entries.php:278 admin/gb-page-entries.php:505
+msgid "Empty Spam"
+msgstr "Удалить спам"
+
+#: admin/gb-page-entries.php:275
+msgid "Apply"
+msgstr "Применить"
+
+#: admin/gb-page-entries.php:267
+msgid "Move to trash"
+msgstr "Отправить в урну"
+
+#: admin/gb-page-entries.php:265
+msgid "Check with Akismet"
+msgstr "Проверить сервисом Akismet"
+
+#: admin/gb-page-entries.php:263
+msgid "Mark as not spam"
+msgstr "Пометить как не спам"
+
+#: admin/gb-page-entries.php:261
+msgid "Mark as spam"
+msgstr "Пометить как спам"
+
+#: admin/gb-page-entries.php:258
+msgid "Mark as not checked"
+msgstr "Пометить как непроверенные"
+
+#: admin/gb-page-entries.php:255
+msgid "Mark as checked"
+msgstr "Пометить как проверенные"
+
+#: admin/gb-page-entries.php:252 admin/gb-page-entries.php:269
+msgid "Remove permanently"
+msgstr "Удалить безвозвратно"
+
+#: admin/gb-page-entries.php:251
+msgid "Recover from trash"
+msgstr "Восстановить из урны"
+
+#: admin/gb-page-entries.php:248
+msgid "Mass edit actions"
+msgstr "Действия по массовому редактированию"
+
+#: admin/gb-page-entries.php:212
+msgid "New"
+msgstr "Новые"
+
+#: admin/gb-page-entries.php:208
+msgid "Unlocked"
+msgstr "Разблокированные"
+
+#: frontend/gb-pagination.php:98 frontend/gb-pagination.php:100
+#: admin/gb-page-entries.php:203
+msgid "All"
+msgstr "Все"
+
+#: functions/gb-privacy.php:190 admin/gb-page-entries.php:175
+msgid "Guestbook entries"
+msgstr "Записи в гостевой книге"
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:815 admin/gb-page-entries.php:827
+msgid "%s entry removed permanently."
+msgid_plural "%s entries removed permanently."
+msgstr[0] "%s запись безвозвратно удалена."
+msgstr[1] "%s записи безвозвратно удалено."
+msgstr[2] "%s записей безвозвратно удалено."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:812
+msgid "%s entry recovered from trash."
+msgid_plural "%s entries recovered from trash."
+msgstr[0] "%s запись восстановлена из урны."
+msgstr[1] "%s записи восстановлены из урны."
+msgstr[2] "%s записей восстановлены из урны."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:809
+msgid "%s entry moved to trash."
+msgid_plural "%s entries moved to trash."
+msgstr[0] "%s запись отправлена в урну."
+msgstr[1] "%s записи отправлено в урну."
+msgstr[2] "%s записей отправлено в урну."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:805
+msgid "%s entry already considered not spam and not changed."
+msgid_plural "%s entries already considered not spam and not changed."
+msgstr[0] "%s запись уже сочтена НЕ спамом и не была изменена."
+msgstr[1] "%s записи уже сочтены НЕ спамом и не были изменены."
+msgstr[2] "%s записей уже сочтены НЕ спамом и не были изменены."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:801
+msgid "%s entry already considered spam and not changed."
+msgid_plural "%s entries already considered spam and not changed."
+msgstr[0] "%s запись уже сочтена спамом и не была изменена."
+msgstr[1] "%s записи уже сочтены спамом и не были изменены."
+msgstr[2] "%s записей уже сочтены спамом и не были изменены."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:793
+msgid "%s entry considered spam and marked as such."
+msgid_plural "%s entries considered spam and marked as such."
+msgstr[0] "%s запись сочтена спамом и помечена как таковой."
+msgstr[1] "%s записи сочтены спамом и помечены как таковой."
+msgstr[2] "%s записей сочтены спамом и помечены как таковой."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:797
+msgid "%s entry considered not spam and marked as such."
+msgid_plural "%s entries considered not spam and marked as such."
+msgstr[0] "%s запись сочтена спамом и помечена как таковой."
+msgstr[1] "%s записи сочтены спамом и помечены как таковой."
+msgstr[2] "%s записей сочтены спамом и помечены как таковой."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:789
+msgid "%s entry marked as not spam and submitted to Akismet as ham (if Akismet was enabled)."
+msgid_plural "%s entries marked as not spam and submitted to Akismet as ham (if Akismet was enabled)."
+msgstr[0] "%s запись помечена как НЕ спам и отправлена в таковом качестве в службу Akismet (если он включён)."
+msgstr[1] "%s записи помечены как НЕ спам и отправлены в таковом качестве в службу Akismet (если он включён)."
+msgstr[2] "%s записей помечены как НЕ спам и отправлены в таковом качестве в службу Akismet (если он включён)."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:786
+msgid "%s entry marked as spam and submitted to Akismet as spam (if Akismet was enabled)."
+msgid_plural "%s entries marked as spam and submitted to Akismet as spam (if Akismet was enabled)."
+msgstr[0] "%s запись помечена как спам и отправлена как таковой в службу Akismet (если он включён)."
+msgstr[1] "%s записи помечены как спам и отправлены как таковой в службу Akismet (если он включён)."
+msgstr[2] "%s записей помечены как спам и отправлены как таковой в службу Akismet (если он включён)."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:783
+msgid "%s entry unchecked."
+msgid_plural "%s entries unchecked."
+msgstr[0] "%s запись помечена как непроверенная."
+msgstr[1] "%s записи помечены как непроверенные."
+msgstr[2] "%s записей помечены как непроверенные."
+
+#. translators: %s is the number of entries
+#: admin/gb-page-entries.php:780
+msgid "%s entry checked."
+msgid_plural "%s entries checked."
+msgstr[0] "%s запись помечена как проверенная."
+msgstr[1] "%s записи помечены как проверенные."
+msgstr[2] "%s записей помечены как проверенные."
+
+#: admin/gb-page-editor.php:448
+msgid "No log yet."
+msgstr "Пока нет истории."
+
+#: admin/gb-page-export.php:90 admin/gb-page-entries.php:406
+#: admin/gb-page-entries.php:408 admin/gb-page-editor.php:511
+msgid "Book ID"
+msgstr "Идентификатор книги"
+
+#: admin/gb-page-editor.php:381 admin/gb-page-editor.php:469
+msgid "Date and time"
+msgstr "Дата и время"
+
+#: admin/gb-page-editor.php:416
+msgid "Edit metadata"
+msgstr "Редактировать метаданные"
+
+#: admin/gb-page-entries.php:307 admin/gb-page-entries.php:324
+#: admin/gb-page-editor.php:413
+msgid "Book"
+msgstr "Книга"
+
+#: admin/gb-page-editor.php:406
+msgid "Host"
+msgstr "Хост"
+
+#: admin/gb-page-editor.php:399
+msgid "Whois search for this IP"
+msgstr "Поиск службой Whois по данному IP"
+
+#: admin/gb-page-editor.php:396
+msgid "Author's IP-address"
+msgstr "IP-адрес автора"
+
+#: admin/gb-page-editor.php:386
+msgid "Not yet"
+msgstr "Пока нет"
+
+#. translators: Log on Editor
+#: functions/gb-mail.php:125 admin/gb-page-editor.php:439
+msgid "Written"
+msgstr "Написано"
+
+#: functions/gb-log.php:190 admin/gb-page-editor.php:371
+#: admin/gb-page-editor.php:378 admin/gb-page-editor.php:403
+#: admin/gb-page-editor.php:410
+msgid "Unknown"
+msgstr "Неизвестен"
+
+#: functions/gb-privacy.php:87 admin/gb-page-entries.php:224
+#: admin/gb-page-entries.php:315 admin/gb-page-entries.php:332
+#: admin/gb-page-editor.php:367 admin/gb-page-editor.php:466
+msgid "Author"
+msgstr "Автор"
+
+#: admin/gb-page-editor.php:111
+msgid "Details"
+msgstr "Подробности"
+
+#: admin/gb-page-editor.php:110
+msgid "Actions"
+msgstr "Действия"
+
+#: admin/gb-page-editor.php:317 admin/gb-page-editor.php:516
+msgid "Save"
+msgstr "Сохранить"
+
+#: admin/gb-page-editor.php:311
+msgid "Remove this entry Permanently."
+msgstr "Удалить эту запись безвозвратно."
+
+#: functions/gb-mail.php:107 admin/gb-page-editor.php:282
+msgid "Checked"
+msgstr "Проверенные"
+
+#: functions/gb-privacy.php:175 admin/gb-page-editor.php:267
+#: admin/gb-page-editor.php:272
+msgid "This entry is Not Visible."
+msgstr "Эту запись не видно."
+
+#: admin/gb-page-editor.php:266 admin/gb-page-editor.php:271
+msgid "This entry is Visible."
+msgstr "Эту запись видно."
+
+#: admin/gb-page-editor.php:262
+msgid "This entry is not yet visible."
+msgstr "Эту запись пока не видно."
+
+#: admin/gb-page-entries.php:430 admin/gb-page-editor.php:254
+msgid "Admin Replied"
+msgstr "Ответил администратор"
+
+#: admin/gb-page-entries.php:424 admin/gb-page-editor.php:248
+msgid "Invisible"
+msgstr "Не видно"
+
+#: admin/gb-page-entries.php:423 admin/gb-page-editor.php:247
+msgid "Visible"
+msgstr "Видно"
+
+#: admin/gb-page-gwolle-gb.php:160 admin/gb-page-editor.php:239
+msgid "View Guestbook"
+msgstr "Смотреть гостевую книгу"
+
+#: admin/gb-page-editor.php:214
+msgid "Mail the author a notification about this reply."
+msgstr "Известить автора об этом ответе по электронной почте."
+
+#: functions/gb-mail.php:256 admin/gb-page-export.php:89
+#: admin/gb-page-editor.php:93 admin/gb-page-editor.php:186
+msgid "Admin Reply"
+msgstr "Ответ администратора"
+
+#: frontend/gwolle_gb-entry.php:184
+msgid "Admin Reply by:"
+msgstr "Ответ от администратора:"
+
+#: frontend/gb-form.php:198 admin/tabs/gb-readingtab.php:204
+#: admin/tabs/gb-formtab.php:174 admin/gb-page-editor.php:92
+#: admin/gb-page-editor.php:174
+msgid "City"
+msgstr "Город"
+
+#: functions/gb-privacy.php:89 admin/gb-page-export.php:81
+msgid "Origin"
+msgstr "Откуда (город)"
+
+#: frontend/gb-form.php:255 functions/gb-privacy.php:90
+#: admin/tabs/gb-formtab.php:214 admin/gb-page-editor.php:91
+#: admin/gb-page-editor.php:160
+msgid "Website"
+msgstr "Веб-сайт"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:120
+msgid "Emoji"
+msgstr "Эмодзи"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:119
+msgid "Clean"
+msgstr "Очистить"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:118
+msgid "Your text to link..."
+msgstr "Текст для ссылки"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:117
+msgid "Link"
+msgstr "Ссылка"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:116
+msgid "Source"
+msgstr "Источник"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:115
+msgid "Picture"
+msgstr "Картинка"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:114
+msgid "Numeric List"
+msgstr "Пронумерованный список"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:113
+msgid "Bulleted List"
+msgstr "Маркированный список"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:112
+msgid "Italic"
+msgstr "Курсив"
+
+#. translators: MarkItUp menu item
+#: gwolle-gb-hooks.php:111
+msgid "Bold"
+msgstr "Полужирный"
+
+#: admin/gb-page-import.php:115 admin/gb-page-import.php:164
+#: admin/tabs/gb-formtab.php:234 admin/gb-page-export.php:85
+#: admin/gb-page-editor.php:130
+msgid "Message"
+msgstr "Текст сообщения"
+
+#: frontend/gb-form.php:320 admin/gb-page-editor.php:90
+msgid "Guestbook entry"
+msgstr "Текст сообщения"
+
+#: admin/gb-page-editor.php:795
+msgid "Entry was not saved."
+msgstr "Запись не была сохранена."
+
+#: admin/gb-page-editor.php:788
+msgid "Entry saved."
+msgstr "Запись сохранена."
+
+#: admin/gb-page-editor.php:739
+msgid "Entry has no content, even though that is mandatory."
+msgstr "В записи нет содержимого, а оно и обязательно."
+
+#: admin/gb-page-editor.php:565
+msgid "Entry removed."
+msgstr "Запись удалена."
+
+#: admin/gb-page-editor.php:694 admin/gb-page-editor.php:792
+msgid "Error happened during saving."
+msgstr "В процессе сохранения возникла ошибка."
+
+#: admin/gb-page-gwolle-gb.php:379 admin/gb-page-gwolle-gb.php:400
+#: admin/gb-page-settings.php:48 admin/gb-page-editor.php:691
+msgid "Changes saved."
+msgstr "Изменения сохранены."
+
+#: admin/gb-page-editor.php:599
+msgid "Submitted as Ham to the Akismet service."
+msgstr "Отправлено как НЕ спам в службу Akismet."
+
+#: admin/gb-page-editor.php:591
+msgid "Submitted as Spam to the Akismet service."
+msgstr "Отправлено как спам в службу Akismet."
+
+#: admin/gb-page-editor.php:555
+msgid "Something strange happened."
+msgstr "Произошло что-то странное."
+
+#: admin/gb-page-editor.php:43
+msgid "New guestbook entry"
+msgstr "Новая запись в гостевой книге"
+
+#: admin/gb-page-editor.php:40
+msgid "Guestbook entry (error)"
+msgstr "Запись в гостевой книге (ошибка)"
+
+#: admin/gb-page-editor.php:38
+msgid "Entry could not be found."
+msgstr "Запись не удалось найти."
+
+#: admin/gb-page-editor.php:25
+msgid "Edit guestbook entry"
+msgstr "Редактировать запись в гостевой книге"
+
+#: admin/gb-dashboard-widget.php:169
+msgid "Guestbook (new entries)"
+msgstr "Гостевая книга (новые записи)"
+
+#: admin/gb-dashboard-widget.php:155
+msgid "No new and unchecked guestbook entries."
+msgstr "Нет новых и непроверенных записей."
+
+#: admin/gb-dashboard-widget.php:152
+msgid "View new"
+msgstr "Смотреть новые"
+
+#: admin/gb-dashboard-widget.php:151
+msgid "View all"
+msgstr "Смотреть все"
+
+#: admin/gb-dashboard-widget.php:150
+msgid "Refresh"
+msgstr "Обновить"
+
+#: admin/gb-dashboard-widget.php:139 admin/gb-page-entries.php:433
+#: admin/gb-page-entries.php:487 admin/gb-page-editor.php:256
+#: admin/gb-page-editor.php:353
+msgid "Wait..."
+msgstr "Ожидайте..."
+
+#: functions/gb-metabox.php:47 admin/gb-dashboard-widget.php:139
+#: admin/gb-page-entries.php:487 admin/gb-page-editor.php:353
+msgid "Please wait..."
+msgstr "Пожалуйста, подождите..."
+
+#: admin/gb-dashboard-widget.php:135 admin/gb-page-entries.php:484
+#: admin/gb-page-editor.php:350
+msgid "Untrash"
+msgstr "Вынуть из урны"
+
+#: admin/gb-dashboard-widget.php:135 admin/gb-page-entries.php:484
+#: admin/gb-page-editor.php:350
+msgid "Recover entry from trash."
+msgstr "Восстановить запись из урны."
+
+#. translators: Move to Trashcan
+#: admin/gb-dashboard-widget.php:131 admin/gb-page-entries.php:481
+#: admin/gb-page-editor.php:347
+msgid "Trash"
+msgstr "Урна"
+
+#: admin/gb-dashboard-widget.php:131 admin/gb-page-entries.php:481
+#: admin/gb-page-editor.php:347
+msgid "Move entry to trash."
+msgstr "Отправить запись в урну."
+
+#: admin/gb-dashboard-widget.php:127 admin/gb-page-entries.php:478
+#: admin/gb-page-editor.php:344
+msgid "Not spam"
+msgstr "Не спам"
+
+#: admin/gb-dashboard-widget.php:127 admin/gb-page-entries.php:478
+#: admin/gb-page-editor.php:344
+msgid "Mark entry as not-spam."
+msgstr "Пометить запись как не спам"
+
+#: admin/gb-dashboard-widget.php:123 admin/gb-page-entries.php:216
+#: admin/gb-page-entries.php:425 admin/gb-page-entries.php:475
+#: admin/gb-page-editor.php:249 admin/gb-page-editor.php:292
+#: admin/gb-page-editor.php:341
+msgid "Spam"
+msgstr "Спам"
+
+#: admin/gb-dashboard-widget.php:123 admin/gb-page-entries.php:475
+#: admin/gb-page-editor.php:341
+msgid "Mark entry as spam."
+msgstr "Пометить запись как спам"
+
+#: admin/gb-dashboard-widget.php:119 admin/gb-page-entries.php:472
+#: admin/gb-page-editor.php:338
+msgid "Uncheck"
+msgstr "Не проверено"
+
+#: admin/gb-dashboard-widget.php:119 admin/gb-page-entries.php:472
+#: admin/gb-page-editor.php:338
+msgid "Uncheck entry"
+msgstr "Пометить запись как непроверенную"
+
+#: admin/gb-dashboard-widget.php:115 admin/gb-page-entries.php:469
+#: admin/gb-page-editor.php:335
+msgid "Check"
+msgstr "Проверено"
+
+#: admin/gb-dashboard-widget.php:115 admin/gb-page-entries.php:469
+#: admin/gb-page-editor.php:335
+msgid "Check entry"
+msgstr "Пометить запись как проверенную"
+
+#: admin/gb-dashboard-widget.php:111 admin/gb-page-entries.php:466
+#: admin/gb-page-editor.php:416
+msgid "Edit"
+msgstr "Редактировать"
+
+#: functions/gb-metabox.php:23 admin/gb-dashboard-widget.php:111
+#: admin/gb-page-entries.php:466
+msgid "Edit entry"
+msgstr "Редактировать запись"
