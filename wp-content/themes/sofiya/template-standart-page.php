@@ -15,81 +15,55 @@ get_header();
     </div>
 
     <div class="content">
-
         <div class="order__block">
             <div class="order__inner">
-               <?php echo get_field('booking_block_main_page', '15'); ?>
+                <?php echo get_field('booking_block_main_page', '15'); ?>
             </div>
         </div>
 
-        <div class="parts__block">
-            <div class="container">
+		<?php echo get_field('description_standart_page'); ?>
+
+        <?php
+            $args = array(
+                'numberposts' => '3',
+                'category'    => '11,14',
+                'post_type'   => 'post',
+                'orderby'     => 'date',
+                'order'       => 'DESC',
+            );
+
+            $lists = get_posts( $args );
+        ?>
+        
+        <?php if($lists){ ?>
+        <div class="action__news">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <?php echo get_field('description_standart_page'); ?>
+                    <div class="col-lg-12">
+                        <div class="section__title"><?php echo get_field('title_list_block_main_page', 15); ?></div>
                     </div>
-                    <div class="col-lg-5">
-						<?php
-							$args = array(
-							   'sort_order'   => 'ASC',
-							   'sort_column'  => 'post_title',
-							   'hierarchical' => 1,
-							   'exclude'      => '',
-							   'include'      => '',
-							   'meta_key'     => '',
-							   'meta_value'   => '',
-							   'authors'      => '',
-							   'child_of'     => 0,
-							   'parent'       => get_the_ID(),
-							   'exclude_tree' => '',
-							   'post_type'    => 'page',
-							   'post_status'  => 'publish',
-							); 
-						
-							$pages = get_pages($args);
-							if($pages){
-						?>
-                        <div class="info__part">
-                            <div class="menu__right">
-                                <ul>
-									<?php foreach($pages as $page){ ?>
-										<li><a href="<?php echo get_permalink($page->ID); ?>"><?php echo $page->post_title; ?></a></li>
-										<?php wp_reset_postdata(); ?>
-									<?php } ?>
-                                </ul>
+                </div>
+                <div class="row__8">
+                    <?php
+                        foreach($lists as $list){
+                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($list->ID), 'full');
+                    ?>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="background__image bg__shadow" style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')">
+                            <div class="an__content content__shadow">
+                                <?php $cat = get_the_category( $list->ID ); ?>
+                                <div class="an__tag"><?php echo $cat[0]->cat_name; ?></div>
+                                <div class="an__title"><?php echo $list->post_title; ?></div>
+                                <a href="<?php echo get_permalink($list->ID) ?>" class="btn btn__link">ПОДРОБНЕЕ</a>
                             </div>
                         </div>
-						<?php } ?>
-                        <div class="info__part">
-                            <?php echo get_field('text_cont_form_block_standart_page'); ?>
-							
-                            <a href="#" class="btn btn__link" data-toggle="modal" data-target="#exampleModalCenter">Задать вопрос</a>
-                        </div>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<?php
-											$forms_a = get_field('cont_form_block_standart_page');
-											if($forms_a){
-												echo do_shortcode('[contact-form-7 id=" ' . $forms_a . ' "]'); 
-											}
-										?>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Modal -->
                     </div>
+                    <?php } ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
+        <?php } ?>
 
         <?php if(get_post_meta( '15', 'enable_through_block_section_main_page', $single = true ) == 'yes'){ ?>
         <div class="main__seazone">
@@ -104,7 +78,7 @@ get_header();
         </div>
         <?php } ?>
 
-         <div class="insta__block">
+        <div class="insta__block">
             <div class="inst__box">
                 <?php
                     if ( function_exists('dynamic_sidebar') )
