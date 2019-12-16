@@ -172,6 +172,7 @@ header p {
 .btn {
     width: auto;
     height: auto;
+    min-width: 182px;
     border: 1px solid #fff;
     background: transparent;
     font-weight: 600;
@@ -2718,4 +2719,12 @@ p {
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 0;
+}
+
+.btn-group-back {
+    padding-top: 20px;
+}
+
+.btn-group-back .btn + .btn{
+    margin-left: 20px;
 }
