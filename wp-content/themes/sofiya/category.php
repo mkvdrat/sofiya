@@ -61,7 +61,7 @@ get_header();
                         
                         <div class="news__item">
                             <div class="row__8">
-                                <div class="col-sm-6">
+                                <div class="col-xs-12 col-sm-6">
                                     <div class="background__image"
                                          style="background-image: url('<?php echo $image_url[0] ? $image_url[0] : esc_url( get_template_directory_uri() ) . '/image/no_image.jpg'; ?>')"></div>
                                 </div>

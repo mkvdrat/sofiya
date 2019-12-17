@@ -28,7 +28,7 @@ get_header();
                     <div class="col-lg-7">
                         <?php echo get_field('description_sidebar_page'); ?>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 mt-lg-3">
 						<?php
 							$args = array(
 							   'sort_order'   => 'ASC',

@@ -44,7 +44,7 @@ get_header();
                                                 $previewpic = esc_url( get_template_directory_uri() ) . '/image/no_image.jpg';
                                             }
                                 ?>
-                                        <div class="col-sm-4">
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
                                             <a href="<?php echo $gal_info->pageid ? get_permalink($gal_info->pageid) : '/#/'; ?>" class="gallery__item">
                                                 <div class="background__image" style="background-image: url('<?php echo $previewpic; ?>')"></div>
                                                 <div class="gallery__title"><?php echo $album->name; ?></div>

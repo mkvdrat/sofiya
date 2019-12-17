@@ -14,17 +14,17 @@ Version: 1.0
             <div class="footer__top">
                 <div class="row">
                     <div class="col-xs-12 col-md-5">
-                        <?php if( have_rows('contact_footer_main_page')){ ?>
+                        <?php if( have_rows('contact_footer_main_page', 15)){ ?>
                         <ul class="footer__address">
-                            <?php while ( have_rows('contact_footer_main_page') ) { the_row(); ?>
-                            <li><?php echo get_sub_field('text_subblock_footer_main_page'); ?></li>
+                            <?php while ( have_rows('contact_footer_main_page', 15) ) { the_row(); ?>
+                            <li><?php echo get_sub_field('text_subblock_footer_main_page', 15); ?></li>
                             <?php } ?>
                         </ul>
                         <?php } ?>
-                        <?php if( have_rows('social_footer_main_page')){ ?>
+                        <?php if( have_rows('social_footer_main_page', 15)){ ?>
                         <ul class="footer__soc">
-                            <?php while ( have_rows('social_footer_main_page') ) { the_row(); ?>
-                            <li><a href="<?php echo get_sub_field('link_subblock_footer_main_page'); ?>"><img src="<?php echo get_sub_field('image_subblock_footer_main_page'); ?>"/></a></li>
+                            <?php while ( have_rows('social_footer_main_page', 15) ) { the_row(); ?>
+                            <li><a href="<?php echo get_sub_field('link_subblock_footer_main_page', 15); ?>"><img src="<?php echo get_sub_field('image_subblock_footer_main_page', 15); ?>"/></a></li>
                             <?php } ?>
                         </ul>
                         <?php } ?>

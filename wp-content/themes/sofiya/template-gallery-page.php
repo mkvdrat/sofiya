@@ -37,9 +37,10 @@ get_header();
                                     if($gallery_image){
                                         foreach($gallery_image as $image) { 
                                     ?>
-                                        <div class="col-sm-4">
-                                            <a href="<?php echo nextgen_esc_url($image->imageURL); ?>" data-fancybox="gallery" class="gallery__item">
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <a href="<?php echo nextgen_esc_url($image->imageURL); ?>" data-fancybox="gallery" data-caption="<?php echo htmlspecialchars_decode($image->alttext); ?>" class="gallery__item">
                                                 <div class="background__image" style="background-image: url('<?php echo nextgen_esc_url($image->imageURL); ?>')"></div>
+                                                <div class="gallery__title"><?php echo $image->alttext; ?></div>
                                             </a>
                                         </div>
                                     <?php

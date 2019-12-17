@@ -34,7 +34,7 @@ get_header();
                             <?php echo get_field('text_operators_block_contacts_page'); ?>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 mt-lg-3">
                         <div class="info__part">
                             <?php
                                 $forms_a = get_field('cont_form_block_contacts_page');

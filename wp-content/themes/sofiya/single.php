@@ -32,6 +32,9 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
+                        <h1><?php echo get_field('title_posts_page'); ?></h1>
+                        <div class="sub__title"><?php echo get_field('short_text_posts_page'); ?></div>
+                        
                         <?php echo get_field('text_posts_page'); ?>
                     </div>
                     <div class="col-lg-5">

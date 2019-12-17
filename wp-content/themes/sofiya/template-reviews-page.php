@@ -5,7 +5,7 @@ Template name: Reviews page
 
 get_header(); 
 ?>
-
+<div class="standart__page">
     <div class="top__banner">
         <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full'); ?>
 
@@ -57,7 +57,7 @@ get_header();
             <a href="<?php echo get_field('instagram_link_main_page', '15'); ?>" class="btn btn-black">ПОДПИСЫВАЙТЕСЬ НА ИНСТАГРАМ ОТЕЛЯ</a>
         </div>
     </div>
-    
+    </div>
     <script language="javascript">
         function submit(){
             $("#commentform").submit();

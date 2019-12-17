@@ -67,7 +67,7 @@ get_header();
                     </div>
 					
 					<?php if( have_rows('informations_rooms_page')){ ?>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 mt-lg-3">
                         <div class="info__part">
                             <ul>
 								<?php while ( have_rows('informations_rooms_page') ) { the_row(); ?>
