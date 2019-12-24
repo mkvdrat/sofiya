@@ -30,6 +30,10 @@ get_header();
                         
                         <?php echo show_gwolle_gb($args = false); ?>
                     </div>
+					<div class="col-lg-5 mt-lg-3">
+						<div class="info__part">
+						</div>
+                    </div>
                 </div>
             </div>
         </div>

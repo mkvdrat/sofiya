@@ -26,15 +26,15 @@ Version: 1.0
         <div class="header__middle">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-lg-5 col-flex">
+                    <div class="col-xs-2 col-sm-4 col-lg-4 col-flex">
 						<a href="#menu" class="mburger mburger--tornado">
 							<b></b>
 							<b></b>
 							<b></b>
 						</a>
-                        <p><?php echo get_field('title_header_main_page', '15'); ?></p>
+                        <p class="col-sm-hide"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_field('title_header_main_page', '15'); ?></a></p>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-lg-3 text-center">
+                    <div class="col-xs-8 col-sm-4 col-lg-4 text-center">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
                             <img
                               src="<?php header_image(); ?>"
@@ -44,7 +44,7 @@ Version: 1.0
                             />
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-4 text-right"><a href="tel:<?php echo get_field('phone_header_main_page', '15'); ?>;"><?php echo get_field('phone_header_main_page', '15'); ?></a></div>
+                    <div class="col-sm-hide col-sm-4 col-lg-4 text-right"><a href="tel:<?php echo get_field('phone_header_main_page', '15'); ?>;"><?php echo get_field('phone_header_main_page', '15'); ?></a></div>
                 </div>
             </div>
         </div>

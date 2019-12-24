@@ -4,7 +4,10 @@ document.addEventListener(
             "extensions": [
                 "pagedim-black",
                 "position-left"
-            ]
+            ],
+			navbar: {
+				title: "Меню"
+			}
         });
     }
 );
@@ -45,6 +48,25 @@ $(document).ready(function () {
             }
         }
     });
+	
+
+	$(".scrollto").on("click", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
     
+   
     $('.button__group *[type="submit"]').attr('disabled', 'disabled');
+	
+	let items = $('#gwolle_gb_messages_top_container, #gwolle_gb_new_entry'),
+		showHideBtn = $('#gwolle_gb_write_button, .gb-notice-dismiss'),
+		justForm = $('#gwolle_gb_new_entry'),
+		target = $('.info__part');
+		
+	items.appendTo(target);	
+	showHideBtn.hide();
+	justForm.show();
+	
 });

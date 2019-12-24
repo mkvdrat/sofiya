@@ -154,7 +154,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	}
 	$output .= '
 			<form id="gwolle_gb_new_entry" action="#" method="POST" class="' . $formclass . '">
-				<h3>' . $header . '</h3>
+				<div class="form__title">' . $header . '</div>
 				' . $hidebutton . '
 				<input type="hidden" name="gwolle_gb_function" id="gwolle_gb_function" value="add_entry" />';
 
@@ -169,11 +169,8 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	if ( isset($form_setting['form_name_enabled']) && $form_setting['form_name_enabled']  === 'true' ) {
 		$field_name = gwolle_gb_get_field_name( 'name' );
 		$label = apply_filters( 'gwolle_gb_author_name_label', esc_html__('Name', 'gwolle-gb') );
-		$output .= '<div class="' . $field_name . '">
-				<div class="label"><label for="' . $field_name . '" class="text-info">' . $label . ':';
-		if ( isset($form_setting['form_name_mandatory']) && $form_setting['form_name_mandatory']  === 'true' ) { $output .= ' *';}
-		$output .= '</label></div>
-				<div class="input"><input class="wp-exclude-emoji ';
+		$output .= '<div class="form-group ' . $field_name . '">
+				<div><input class="wp-exclude-emoji ';
 		if (in_array($field_name, $gwolle_gb_error_fields)) {
 			$output .= ' error';
 		}
@@ -186,8 +183,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 			$output .= ' required';
 		}
 		$output .= ' /></div>
-			</div>
-			<div class="clearBoth">&nbsp;</div>';
+			</div>';
 	}
 	$output .= apply_filters( 'gwolle_gb_write_add_after_name', '' );
 
@@ -196,11 +192,8 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	if ( isset($form_setting['form_city_enabled']) && $form_setting['form_city_enabled']  === 'true' ) {
 		$field_name = gwolle_gb_get_field_name( 'city' );
 		$label = apply_filters( 'gwolle_gb_author_origin_label', esc_html__('City', 'gwolle-gb') );
-		$output .= '<div class="' . $field_name . '">
-					<div class="label"><label for="' . $field_name . '" class="text-info">' . $label . ':';
-		if ( isset($form_setting['form_city_mandatory']) && $form_setting['form_city_mandatory']  === 'true' ) { $output .= ' *';}
-		$output .= '</label></div>
-					<div class="input"><input class="wp-exclude-emoji ';
+		$output .= '<div class="form-group ' . $field_name . '">					
+					<div><input class="wp-exclude-emoji ';
 		if (in_array($field_name, $gwolle_gb_error_fields)) {
 			$output .= ' error';
 		}
@@ -213,8 +206,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 			$output .= ' required';
 		}
 		$output .= ' /></div>
-				</div>
-				<div class="clearBoth">&nbsp;</div>';
+				</div>';
 	}
 	$output .= apply_filters( 'gwolle_gb_write_add_after_origin', '' );
 
@@ -222,11 +214,8 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	if ( isset($form_setting['form_email_enabled']) && $form_setting['form_email_enabled']  === 'true' ) {
 		$field_name = gwolle_gb_get_field_name( 'email' );
 		$label = apply_filters( 'gwolle_gb_author_email_label', esc_html__('Email', 'gwolle-gb') );
-		$output .= '<div class="' . $field_name . '">
-				<div class="label"><label for="' . $field_name . '" class="text-info">' . $label . ':';
-		if ( isset($form_setting['form_email_mandatory']) && $form_setting['form_email_mandatory']  === 'true' ) { $output .= ' *';}
-		$output .= '</label></div>
-				<div class="input"><input class="';
+		$output .= '<div class="form-group ' . $field_name . '">				
+				<div><input class="';
 		if (in_array($field_name, $gwolle_gb_error_fields)) {
 			$output .= ' error';
 		}
@@ -239,8 +228,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 			$output .= ' required';
 		}
 		$output .= ' /></div>
-			</div>
-			<div class="clearBoth">&nbsp;</div>';
+			</div>';
 	} else {
 		if ( isset($email) && strlen($email) > 0 ) {
 			// For logged in users, just save the email anyway.
@@ -253,11 +241,8 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	if ( isset($form_setting['form_homepage_enabled']) && $form_setting['form_homepage_enabled']  === 'true' ) {
 		$field_name = gwolle_gb_get_field_name( 'website' );
 		$label = apply_filters( 'gwolle_gb_author_website_label', esc_html__('Website', 'gwolle-gb') );
-		$output .= '<div class="' . $field_name . '">
-				<div class="label"><label for="' . $field_name . '" class="text-info">' . $label . ':';
-		if ( isset($form_setting['form_homepage_mandatory']) && $form_setting['form_homepage_mandatory']  === 'true' ) { $output .= ' *';}
-		$output .= '</label></div>
-				<div class="input"><input class="';
+		$output .= '<div class="form-group ' . $field_name . '">
+				<div><input class="';
 		if (in_array($field_name, $gwolle_gb_error_fields)) {
 			$output .= ' error';
 		}
@@ -271,8 +256,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 		}
 		// $output .= ' pattern="[a-z0-9]+\.[a-z]$"'; // try to relax validation to work without http://
 		$output .= ' /></div>
-			</div>
-			<div class="clearBoth">&nbsp;</div>';
+			</div>';
 	}
 	$output .= apply_filters( 'gwolle_gb_write_add_after_website', '' );
 
@@ -318,11 +302,8 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 	if ( isset($form_setting['form_message_enabled']) && $form_setting['form_message_enabled']  === 'true' ) {
 		$field_name = gwolle_gb_get_field_name( 'content' );
 		$label = apply_filters( 'gwolle_gb_content_label', esc_html__('Guestbook entry', 'gwolle-gb') );
-		$output .= '<div class="' . $field_name . '">
-				<div class="label"><label for="' . $field_name . '" class="text-info">' . $label . ':';
-		if ( isset($form_setting['form_message_mandatory']) && $form_setting['form_message_mandatory']  === 'true' ) { $output .= ' *';}
-		$output .= '</label></div>
-				<div class="input"><textarea name="' . $field_name . '" id="' . $field_name . '" class="wp-exclude-emoji ';
+		$output .= '<div class="form-group ' . $field_name . '">
+				<div><textarea name="' . $field_name . '" id="' . $field_name . '" class="wp-exclude-emoji ';
 		if (in_array($field_name, $gwolle_gb_error_fields)) {
 			$output .= ' error';
 		}
@@ -349,8 +330,7 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 		$output .= '</div>'; // .input
 
 		$output .= '
-				</div>
-			<div class="clearBoth">&nbsp;</div>';
+				</div>';
 	}
 	$output .= apply_filters( 'gwolle_gb_write_add_after_content', '' );
 
@@ -400,11 +380,9 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 		/* translators: %s is a link to the privacy policy page. */
 		$label = apply_filters( 'gwolle_gb_privacy_label', sprintf( esc_html__( 'Accept %sPrivacy Policy%s', 'gwolle-gb' ), $a_open, $a_close ) );
 		$output .= '
-				<div class="gwolle_gb_privacy">
-					<div class="label"><label for="gwolle_gb_privacy" class="text-info">' . $label . ': *</label></div>
-					<div class="input"><input type="checkbox" name="gwolle_gb_privacy" id="gwolle_gb_privacy" required /></div>
-				</div>
-				<div class="clearBoth">&nbsp;</div>';
+				<div class="form-group gwolle_gb_privacy">
+					<span><input type="checkbox" name="gwolle_gb_privacy" id="gwolle_gb_privacy" required /><label for="gwolle_gb_privacy" class="text-info">' . $label . ': *</label></span>
+				</div>';
 	}
 
 	/* Nonce */
@@ -422,10 +400,9 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 
 			<noscript><div class="no-js">' . esc_html__( 'Warning: This form can only be used if JavaScript is enabled in your browser.', 'gwolle-gb' ) . '</div></noscript>
 
-			<div class="gwolle_gb_submit">
-				<div class="label gwolle_gb_invisible text-muted">&nbsp;</div>
-				<div class="input">
-					<input type="submit" name="gwolle_gb_submit" id="gwolle_gb_submit" class="button btn btn-primary ' . $button_class . '" value="' . esc_attr__('Submit', 'gwolle-gb') . '" />
+			<div class="form-group gwolle_gb_submit">
+				<div>
+					<input type="submit" name="gwolle_gb_submit" id="gwolle_gb_submit" class="button btn btn-primary btn-submit' . $button_class . '" value="' . esc_attr__('Submit', 'gwolle-gb') . '" />
 					<span class="gwolle_gb_submit_ajax_icon"></span>
 			';
 
@@ -433,28 +410,9 @@ function gwolle_gb_frontend_write( $shortcode_atts, $shortcode ) {
 
 	$output .= '
 				</div>
-			</div>
-			<div class="clearBoth">&nbsp;</div>
-
-			<div class="gwolle_gb_notice">
-				';
-
-	$notice = gwolle_gb_sanitize_output( get_option('gwolle_gb-notice', false), 'setting_textarea' );
-	if ( $notice == false ) { // No text set by the user. Use the default text.
-		$notice = esc_html__("
-Fields marked with * are required.
-Your E-mail address won't be published.
-It's possible that your entry will only be visible in the guestbook after we reviewed it.
-We reserve the right to edit, delete, or not publish entries.
-"
-, 'gwolle-gb');
-	}
-
-	$notice = nl2br($notice);
-	$output .= str_replace('%ip%', $_SERVER['REMOTE_ADDR'], $notice);
-
-	$output .= '
 			</div>';
+
+	
 
 	// Use this filter to just add something
 	$output .= apply_filters( 'gwolle_gb_write_add_after', '' );

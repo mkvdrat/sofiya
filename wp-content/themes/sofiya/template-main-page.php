@@ -425,38 +425,39 @@ get_header();
         
         <?php
             $args = array(
-                'status' => 'approve',
-                'number' => '10',
-                'post_id' => 211,
+                'offset'      => 0,
+                'num_entries' => -1,
+                'checked'     => 'checked',
+                'trash'       => 'notrash',
+                'spam'        => 'nospam'
             );
-        
-            $comments = get_comments( $args );
-        
-            if(!empty($comments)){
-        ?>
-        <div class="testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="testimonials__carousel">
-                            <div class="owl-carousel">
-                                <?php foreach ($comments as $comment) { ?>
-                                <?php $city = get_comment_meta($comment->comment_ID, 'city', true); ?>
-                                <div class="item">
-                                    <div class="testim__name"><?php echo $comment->comment_author; ?> <?php echo $city ? ', ' . $city : ''; ?></div>
-                                    <div class="testim__date"><?php comment_date( 'd.m.y', $comment->comment_ID ); ?></div>
-                                    <div class="testim__text"><?php echo mb_substr( strip_tags( $comment->comment_content ), 0, 152 ); ?></div>
+            
+            $comments = gwolle_gb_get_entries($args);
+            
+            if ( is_array( $comments ) && !empty( $comments ) ) {    
+        ?> 
+            <div class="testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="testimonials__carousel">
+                                <div class="owl-carousel">
+                                    <?php foreach ($comments as $comment) { ?>
+                                    <div class="item">
+                                        <div class="testim__name"><?php echo $comment->get_author_name(); ?><?php echo $comment->get_author_origin() ? ', ' . $comment->get_author_origin() : ''; ?></div>
+                                        <div class="testim__date"><?php echo date_i18n( get_option('date_format'), $comment->get_datetime() ); ?></div>
+                                        <div class="testim__text"><?php echo mb_substr( strip_tags( $comment->get_content() ), 0, 152 ); ?></div>
+                                    </div>
+                                    <?php } ?>
                                 </div>
-                                <?php } ?>
+                                <a href="<?php echo get_permalink( 211 ); ?>" class="btn btn__link">Читать все отзывы</a>
                             </div>
-                            <a href="<?php echo get_permalink( 211 ); ?>" class="btn btn__link">Читать все отзывы</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>   
         <?php } ?>
-        
+                
         <?php if(get_post_meta( '15', 'enable_through_block_section_main_page', $single = true ) == 'yes'){ ?>
         <div class="main__seazone">
             <?php $image_url = get_field('image_open_block_main_page'); ?>

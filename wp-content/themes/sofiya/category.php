@@ -136,12 +136,10 @@ get_header();
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-body">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
-                                        </div>
-                                        <div class="modal-body">
                                             <?php
                                                 $forms_a = get_term_meta(get_queried_object()->term_id, 'cont_form_block_posts_page', true);
                                                 if($forms_a){
